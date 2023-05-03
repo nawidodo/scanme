@@ -7,23 +7,70 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0F5C844C58BEE706817A93AE /* Pods_Scan_me__calculator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7254F2B02981F77ECA306B2 /* Pods_Scan_me__calculator.framework */; };
+		CD45FA0629FF865400457E8F /* ScanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD45FA0429FF865400457E8F /* ScanViewController.swift */; };
+		CD45FA0729FF865400457E8F /* ScanViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD45FA0529FF865400457E8F /* ScanViewController.xib */; };
+		CD45FA0929FF87EB00457E8F /* Expression.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD45FA0829FF87EB00457E8F /* Expression.swift */; };
+		CD45FA0B29FF8C1000457E8F /* ExpressionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD45FA0A29FF8C1000457E8F /* ExpressionCell.swift */; };
+		CD45FA0D29FF968000457E8F /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD45FA0C29FF968000457E8F /* UIView+Extensions.swift */; };
+		CD45FA0F29FFA45700457E8F /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD45FA0E29FFA45700457E8F /* App.swift */; };
 		CD73321629FCEFDA00899ECC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD73321529FCEFDA00899ECC /* AppDelegate.swift */; };
-		CD73321829FCEFDA00899ECC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD73321729FCEFDA00899ECC /* SceneDelegate.swift */; };
-		CD73321A29FCEFDA00899ECC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD73321929FCEFDA00899ECC /* ViewController.swift */; };
-		CD73321D29FCEFDA00899ECC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD73321B29FCEFDA00899ECC /* Main.storyboard */; };
+		CD73321A29FCEFDA00899ECC /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD73321929FCEFDA00899ECC /* CameraViewController.swift */; };
 		CD73321F29FCEFDB00899ECC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD73321E29FCEFDB00899ECC /* Assets.xcassets */; };
 		CD73322229FCEFDB00899ECC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD73322029FCEFDB00899ECC /* LaunchScreen.storyboard */; };
+		CD73322B29FCFC6F00899ECC /* GalleryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD73322929FCFC6F00899ECC /* GalleryViewController.swift */; };
+		CD73322C29FCFC6F00899ECC /* GalleryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD73322A29FCFC6F00899ECC /* GalleryViewController.xib */; };
+		CDA53BD42A0233DB00B5DFF8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CDA53BD32A0233DB00B5DFF8 /* GoogleService-Info.plist */; };
+		CDAE86692A00EF0900BCB253 /* PaddingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDAE86682A00EF0900BCB253 /* PaddingTableViewCell.swift */; };
+		CDAE866C2A013EB300BCB253 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDAE866B2A013EB300BCB253 /* ContentView.swift */; };
+		CDAE866E2A013EF600BCB253 /* ContentView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CDAE866D2A013EF600BCB253 /* ContentView.xib */; };
+		CDAE86882A01638500BCB253 /* ScanInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDAE86872A01638500BCB253 /* ScanInteractor.swift */; };
+		CDAE868A2A01665300BCB253 /* ScanPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDAE86892A01665300BCB253 /* ScanPresenter.swift */; };
+		CDAE86EB2A01715500BCB253 /* SegmentedControlFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDAE86EA2A01715500BCB253 /* SegmentedControlFactory.swift */; };
+		CDAE86ED2A017AC600BCB253 /* OCRService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDAE86EC2A017AC600BCB253 /* OCRService.swift */; };
+		CDAE86EF2A01846E00BCB253 /* FileService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDAE86EE2A01846E00BCB253 /* FileService.swift */; };
+		CDAE86F12A01847E00BCB253 /* CloudService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDAE86F02A01847E00BCB253 /* CloudService.swift */; };
+		CDAE86F32A018DAA00BCB253 /* CustomError.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDAE86F22A018DAA00BCB253 /* CustomError.swift */; };
+		CDAE86F52A019B1B00BCB253 /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDAE86F42A019B1B00BCB253 /* UIViewController+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		CD73321229FCEFDA00899ECC /* Scan me! calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Scan me! calculator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5CB2E1FD1ABDFA6902B6A5A0 /* Pods-Scan me! calculator.debug-app-red-camera-roll.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Scan me! calculator.debug-app-red-camera-roll.xcconfig"; path = "Target Support Files/Pods-Scan me! calculator/Pods-Scan me! calculator.debug-app-red-camera-roll.xcconfig"; sourceTree = "<group>"; };
+		67D2EA1B0D06069B6424A190 /* Pods-Scan me! calculator.release-app-red-camera-roll.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Scan me! calculator.release-app-red-camera-roll.xcconfig"; path = "Target Support Files/Pods-Scan me! calculator/Pods-Scan me! calculator.release-app-red-camera-roll.xcconfig"; sourceTree = "<group>"; };
+		84DCB8E23A3F1EBCA8113023 /* Pods-Scan me! calculator.release-app-green-camera-roll.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Scan me! calculator.release-app-green-camera-roll.xcconfig"; path = "Target Support Files/Pods-Scan me! calculator/Pods-Scan me! calculator.release-app-green-camera-roll.xcconfig"; sourceTree = "<group>"; };
+		B47BDB5BBAE2ADA44040A34E /* Pods-Scan me! calculator.debug-app-green-camera-roll.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Scan me! calculator.debug-app-green-camera-roll.xcconfig"; path = "Target Support Files/Pods-Scan me! calculator/Pods-Scan me! calculator.debug-app-green-camera-roll.xcconfig"; sourceTree = "<group>"; };
+		BD99064B3A75465D0D85AB7B /* Pods-Scan me! calculator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Scan me! calculator.release.xcconfig"; path = "Target Support Files/Pods-Scan me! calculator/Pods-Scan me! calculator.release.xcconfig"; sourceTree = "<group>"; };
+		CD45FA0429FF865400457E8F /* ScanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanViewController.swift; sourceTree = "<group>"; };
+		CD45FA0529FF865400457E8F /* ScanViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ScanViewController.xib; sourceTree = "<group>"; };
+		CD45FA0829FF87EB00457E8F /* Expression.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Expression.swift; sourceTree = "<group>"; };
+		CD45FA0A29FF8C1000457E8F /* ExpressionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpressionCell.swift; sourceTree = "<group>"; };
+		CD45FA0C29FF968000457E8F /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
+		CD45FA0E29FFA45700457E8F /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
+		CD73321229FCEFDA00899ECC /* ScanMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScanMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD73321529FCEFDA00899ECC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CD73321729FCEFDA00899ECC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		CD73321929FCEFDA00899ECC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		CD73321C29FCEFDA00899ECC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CD73321929FCEFDA00899ECC /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 		CD73321E29FCEFDB00899ECC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CD73322129FCEFDB00899ECC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CD73322329FCEFDB00899ECC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD73322929FCFC6F00899ECC /* GalleryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryViewController.swift; sourceTree = "<group>"; };
+		CD73322A29FCFC6F00899ECC /* GalleryViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GalleryViewController.xib; sourceTree = "<group>"; };
+		CDA53BD32A0233DB00B5DFF8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		CDAE86682A00EF0900BCB253 /* PaddingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaddingTableViewCell.swift; sourceTree = "<group>"; };
+		CDAE866B2A013EB300BCB253 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		CDAE866D2A013EF600BCB253 /* ContentView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContentView.xib; sourceTree = "<group>"; };
+		CDAE86872A01638500BCB253 /* ScanInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanInteractor.swift; sourceTree = "<group>"; };
+		CDAE86892A01665300BCB253 /* ScanPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanPresenter.swift; sourceTree = "<group>"; };
+		CDAE86A42A0167F900BCB253 /* Scan me! calculator.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Scan me! calculator.plist"; path = "/Users/nawidodo/Development/iOS/Scan me! calculator/Scan me! calculator.plist"; sourceTree = "<absolute>"; };
+		CDAE86EA2A01715500BCB253 /* SegmentedControlFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentedControlFactory.swift; sourceTree = "<group>"; };
+		CDAE86EC2A017AC600BCB253 /* OCRService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OCRService.swift; sourceTree = "<group>"; };
+		CDAE86EE2A01846E00BCB253 /* FileService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileService.swift; sourceTree = "<group>"; };
+		CDAE86F02A01847E00BCB253 /* CloudService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudService.swift; sourceTree = "<group>"; };
+		CDAE86F22A018DAA00BCB253 /* CustomError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomError.swift; sourceTree = "<group>"; };
+		CDAE86F42A019B1B00BCB253 /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
+		D1AD73AF2BEAC1B4CF85B1A8 /* Pods-Scan me! calculator.debug-app-red-built-in-camera.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Scan me! calculator.debug-app-red-built-in-camera.xcconfig"; path = "Target Support Files/Pods-Scan me! calculator/Pods-Scan me! calculator.debug-app-red-built-in-camera.xcconfig"; sourceTree = "<group>"; };
+		D4042106BC0F70D34A0B438F /* Pods-Scan me! calculator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Scan me! calculator.debug.xcconfig"; path = "Target Support Files/Pods-Scan me! calculator/Pods-Scan me! calculator.debug.xcconfig"; sourceTree = "<group>"; };
+		E9974DBE126A5F8CE8447966 /* Pods-Scan me! calculator.release-app-red-built-in-camera.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Scan me! calculator.release-app-red-built-in-camera.xcconfig"; path = "Target Support Files/Pods-Scan me! calculator/Pods-Scan me! calculator.release-app-red-built-in-camera.xcconfig"; sourceTree = "<group>"; };
+		F7254F2B02981F77ECA306B2 /* Pods_Scan_me__calculator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Scan_me__calculator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,24 +78,51 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0F5C844C58BEE706817A93AE /* Pods_Scan_me__calculator.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1CEE2E2EFA944B8EF9D946C5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F7254F2B02981F77ECA306B2 /* Pods_Scan_me__calculator.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B26DEA865BA28B67B6B313D1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D4042106BC0F70D34A0B438F /* Pods-Scan me! calculator.debug.xcconfig */,
+				5CB2E1FD1ABDFA6902B6A5A0 /* Pods-Scan me! calculator.debug-app-red-camera-roll.xcconfig */,
+				D1AD73AF2BEAC1B4CF85B1A8 /* Pods-Scan me! calculator.debug-app-red-built-in-camera.xcconfig */,
+				B47BDB5BBAE2ADA44040A34E /* Pods-Scan me! calculator.debug-app-green-camera-roll.xcconfig */,
+				BD99064B3A75465D0D85AB7B /* Pods-Scan me! calculator.release.xcconfig */,
+				67D2EA1B0D06069B6424A190 /* Pods-Scan me! calculator.release-app-red-camera-roll.xcconfig */,
+				E9974DBE126A5F8CE8447966 /* Pods-Scan me! calculator.release-app-red-built-in-camera.xcconfig */,
+				84DCB8E23A3F1EBCA8113023 /* Pods-Scan me! calculator.release-app-green-camera-roll.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		CD73320929FCEFDA00899ECC = {
 			isa = PBXGroup;
 			children = (
 				CD73321429FCEFDA00899ECC /* Scan me! calculator */,
 				CD73321329FCEFDA00899ECC /* Products */,
+				CDAE86A42A0167F900BCB253 /* Scan me! calculator.plist */,
+				B26DEA865BA28B67B6B313D1 /* Pods */,
+				1CEE2E2EFA944B8EF9D946C5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
 		CD73321329FCEFDA00899ECC /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				CD73321229FCEFDA00899ECC /* Scan me! calculator.app */,
+				CD73321229FCEFDA00899ECC /* ScanMe.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -57,12 +131,30 @@
 			isa = PBXGroup;
 			children = (
 				CD73321529FCEFDA00899ECC /* AppDelegate.swift */,
-				CD73321729FCEFDA00899ECC /* SceneDelegate.swift */,
-				CD73321929FCEFDA00899ECC /* ViewController.swift */,
-				CD73321B29FCEFDA00899ECC /* Main.storyboard */,
+				CD73321929FCEFDA00899ECC /* CameraViewController.swift */,
 				CD73321E29FCEFDB00899ECC /* Assets.xcassets */,
 				CD73322029FCEFDB00899ECC /* LaunchScreen.storyboard */,
 				CD73322329FCEFDB00899ECC /* Info.plist */,
+				CDA53BD32A0233DB00B5DFF8 /* GoogleService-Info.plist */,
+				CD73322929FCFC6F00899ECC /* GalleryViewController.swift */,
+				CDAE86EC2A017AC600BCB253 /* OCRService.swift */,
+				CDAE86F42A019B1B00BCB253 /* UIViewController+Extensions.swift */,
+				CDAE86872A01638500BCB253 /* ScanInteractor.swift */,
+				CDAE86892A01665300BCB253 /* ScanPresenter.swift */,
+				CD73322A29FCFC6F00899ECC /* GalleryViewController.xib */,
+				CD45FA0429FF865400457E8F /* ScanViewController.swift */,
+				CD45FA0529FF865400457E8F /* ScanViewController.xib */,
+				CD45FA0829FF87EB00457E8F /* Expression.swift */,
+				CD45FA0A29FF8C1000457E8F /* ExpressionCell.swift */,
+				CD45FA0C29FF968000457E8F /* UIView+Extensions.swift */,
+				CD45FA0E29FFA45700457E8F /* App.swift */,
+				CDAE86682A00EF0900BCB253 /* PaddingTableViewCell.swift */,
+				CDAE866B2A013EB300BCB253 /* ContentView.swift */,
+				CDAE866D2A013EF600BCB253 /* ContentView.xib */,
+				CDAE86EA2A01715500BCB253 /* SegmentedControlFactory.swift */,
+				CDAE86EE2A01846E00BCB253 /* FileService.swift */,
+				CDAE86F02A01847E00BCB253 /* CloudService.swift */,
+				CDAE86F22A018DAA00BCB253 /* CustomError.swift */,
 			);
 			path = "Scan me! calculator";
 			sourceTree = "<group>";
@@ -74,9 +166,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CD73322629FCEFDB00899ECC /* Build configuration list for PBXNativeTarget "Scan me! calculator" */;
 			buildPhases = (
+				43F5DE2A1D8672CC2D1717BA /* [CP] Check Pods Manifest.lock */,
 				CD73320E29FCEFDA00899ECC /* Sources */,
 				CD73320F29FCEFDA00899ECC /* Frameworks */,
 				CD73321029FCEFDA00899ECC /* Resources */,
+				0D9F32129DB454E1BC9CA39E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -84,7 +178,7 @@
 			);
 			name = "Scan me! calculator";
 			productName = "Scan me! calculator";
-			productReference = CD73321229FCEFDA00899ECC /* Scan me! calculator.app */;
+			productReference = CD73321229FCEFDA00899ECC /* ScanMe.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -126,35 +220,87 @@
 			buildActionMask = 2147483647;
 			files = (
 				CD73322229FCEFDB00899ECC /* LaunchScreen.storyboard in Resources */,
+				CD73322C29FCFC6F00899ECC /* GalleryViewController.xib in Resources */,
 				CD73321F29FCEFDB00899ECC /* Assets.xcassets in Resources */,
-				CD73321D29FCEFDA00899ECC /* Main.storyboard in Resources */,
+				CDAE866E2A013EF600BCB253 /* ContentView.xib in Resources */,
+				CD45FA0729FF865400457E8F /* ScanViewController.xib in Resources */,
+				CDA53BD42A0233DB00B5DFF8 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0D9F32129DB454E1BC9CA39E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Scan me! calculator/Pods-Scan me! calculator-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Scan me! calculator/Pods-Scan me! calculator-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Scan me! calculator/Pods-Scan me! calculator-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		43F5DE2A1D8672CC2D1717BA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Scan me! calculator-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		CD73320E29FCEFDA00899ECC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CD73321A29FCEFDA00899ECC /* ViewController.swift in Sources */,
+				CDAE86882A01638500BCB253 /* ScanInteractor.swift in Sources */,
+				CD73322B29FCFC6F00899ECC /* GalleryViewController.swift in Sources */,
+				CDAE86F32A018DAA00BCB253 /* CustomError.swift in Sources */,
+				CD45FA0F29FFA45700457E8F /* App.swift in Sources */,
+				CDAE86F52A019B1B00BCB253 /* UIViewController+Extensions.swift in Sources */,
+				CDAE868A2A01665300BCB253 /* ScanPresenter.swift in Sources */,
+				CD45FA0D29FF968000457E8F /* UIView+Extensions.swift in Sources */,
+				CDAE86F12A01847E00BCB253 /* CloudService.swift in Sources */,
+				CD45FA0B29FF8C1000457E8F /* ExpressionCell.swift in Sources */,
+				CDAE86692A00EF0900BCB253 /* PaddingTableViewCell.swift in Sources */,
+				CD73321A29FCEFDA00899ECC /* CameraViewController.swift in Sources */,
+				CDAE86EF2A01846E00BCB253 /* FileService.swift in Sources */,
+				CDAE86ED2A017AC600BCB253 /* OCRService.swift in Sources */,
+				CDAE866C2A013EB300BCB253 /* ContentView.swift in Sources */,
+				CDAE86EB2A01715500BCB253 /* SegmentedControlFactory.swift in Sources */,
 				CD73321629FCEFDA00899ECC /* AppDelegate.swift in Sources */,
-				CD73321829FCEFDA00899ECC /* SceneDelegate.swift in Sources */,
+				CD45FA0629FF865400457E8F /* ScanViewController.swift in Sources */,
+				CD45FA0929FF87EB00457E8F /* Expression.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		CD73321B29FCEFDA00899ECC /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CD73321C29FCEFDA00899ECC /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		CD73322029FCEFDB00899ECC /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -216,7 +362,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -270,7 +416,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -282,6 +428,7 @@
 		};
 		CD73322729FCEFDB00899ECC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D4042106BC0F70D34A0B438F /* Pods-Scan me! calculator.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -290,26 +437,33 @@
 				DEVELOPMENT_TEAM = T2FQ2ETBMW;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Scan me! calculator/Info.plist";
+				INFOPLIST_KEY_NSCameraUsageDescription = "$(PRODUCT_NAME) needs access to your camera to scan images and recognize text.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "$(PRODUCT_NAME) needs access to your photo library to scan images and recognize text.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.gorgom.Scan-me--calculator";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				OTHER_SWIFT_FLAGS = "-DTHEME_RED -DMEDIA_GALLERY";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gorgom.scanme;
+				PRODUCT_NAME = ScanMe;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		CD73322829FCEFDB00899ECC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BD99064B3A75465D0D85AB7B /* Pods-Scan me! calculator.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -318,23 +472,581 @@
 				DEVELOPMENT_TEAM = T2FQ2ETBMW;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Scan me! calculator/Info.plist";
+				INFOPLIST_KEY_NSCameraUsageDescription = "$(PRODUCT_NAME) needs access to your camera to scan images and recognize text.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "$(PRODUCT_NAME) needs access to your photo library to scan images and recognize text.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.gorgom.Scan-me--calculator";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				OTHER_SWIFT_FLAGS = "-DTHEME_RED -DMEDIA_GALLERY";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gorgom.scanme;
+				PRODUCT_NAME = ScanMe;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
+		};
+		CDAE86C42A016D5800BCB253 /* Debug-app-red-camera-roll */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = "Debug-app-red-camera-roll";
+		};
+		CDAE86C52A016D5800BCB253 /* Debug-app-red-camera-roll */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5CB2E1FD1ABDFA6902B6A5A0 /* Pods-Scan me! calculator.debug-app-red-camera-roll.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = T2FQ2ETBMW;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Scan me! calculator/Info.plist";
+				INFOPLIST_KEY_NSCameraUsageDescription = "$(PRODUCT_NAME) needs access to your camera to scan images and recognize text.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "$(PRODUCT_NAME) needs access to your photo library to scan images and recognize text.";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_SWIFT_FLAGS = "-DTHEME_RED -DMEDIA_GALLERY";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gorgom.scanme;
+				PRODUCT_NAME = ScanMe;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = "Debug-app-red-camera-roll";
+		};
+		CDAE86C62A016D7E00BCB253 /* Release-app-red-camera-roll */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = "Release-app-red-camera-roll";
+		};
+		CDAE86C72A016D7E00BCB253 /* Release-app-red-camera-roll */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 67D2EA1B0D06069B6424A190 /* Pods-Scan me! calculator.release-app-red-camera-roll.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = T2FQ2ETBMW;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Scan me! calculator/Info.plist";
+				INFOPLIST_KEY_NSCameraUsageDescription = "$(PRODUCT_NAME) needs access to your camera to scan images and recognize text.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "$(PRODUCT_NAME) needs access to your photo library to scan images and recognize text.";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_SWIFT_FLAGS = "-DTHEME_RED -DMEDIA_GALLERY";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gorgom.scanme;
+				PRODUCT_NAME = ScanMe;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = "Release-app-red-camera-roll";
+		};
+		CDAE86C82A016DC600BCB253 /* Debug-app-green-camera-roll */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = "Debug-app-green-camera-roll";
+		};
+		CDAE86C92A016DC600BCB253 /* Debug-app-green-camera-roll */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B47BDB5BBAE2ADA44040A34E /* Pods-Scan me! calculator.debug-app-green-camera-roll.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = T2FQ2ETBMW;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Scan me! calculator/Info.plist";
+				INFOPLIST_KEY_NSCameraUsageDescription = "$(PRODUCT_NAME) needs access to your camera to scan images and recognize text.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "$(PRODUCT_NAME) needs access to your photo library to scan images and recognize text.";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_SWIFT_FLAGS = "-DTHEME_GREEN -DMEDIA_GALLERY";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gorgom.scanme;
+				PRODUCT_NAME = ScanMe;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = "Debug-app-green-camera-roll";
+		};
+		CDAE86CA2A016DDD00BCB253 /* Release-app-green-camera-roll */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = "Release-app-green-camera-roll";
+		};
+		CDAE86CB2A016DDD00BCB253 /* Release-app-green-camera-roll */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 84DCB8E23A3F1EBCA8113023 /* Pods-Scan me! calculator.release-app-green-camera-roll.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = T2FQ2ETBMW;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Scan me! calculator/Info.plist";
+				INFOPLIST_KEY_NSCameraUsageDescription = "$(PRODUCT_NAME) needs access to your camera to scan images and recognize text.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "$(PRODUCT_NAME) needs access to your photo library to scan images and recognize text.";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_SWIFT_FLAGS = "-DTHEME_GREEN -DMEDIA_GALLERY";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gorgom.scanme;
+				PRODUCT_NAME = ScanMe;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = "Release-app-green-camera-roll";
+		};
+		CDE47D442A020AAD00194C9C /* Debug-app-red-built-in-camera */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = "Debug-app-red-built-in-camera";
+		};
+		CDE47D452A020AAD00194C9C /* Debug-app-red-built-in-camera */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D1AD73AF2BEAC1B4CF85B1A8 /* Pods-Scan me! calculator.debug-app-red-built-in-camera.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = T2FQ2ETBMW;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Scan me! calculator/Info.plist";
+				INFOPLIST_KEY_NSCameraUsageDescription = "$(PRODUCT_NAME) needs access to your camera to scan images and recognize text.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "$(PRODUCT_NAME) needs access to your photo library to scan images and recognize text.";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_SWIFT_FLAGS = "-DTHEME_RED -DMEDIA_CAMERA";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gorgom.scanme;
+				PRODUCT_NAME = ScanMe;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = "Debug-app-red-built-in-camera";
+		};
+		CDE47D462A020ACD00194C9C /* Release-app-red-built-in-camera */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = "Release-app-red-built-in-camera";
+		};
+		CDE47D472A020ACD00194C9C /* Release-app-red-built-in-camera */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E9974DBE126A5F8CE8447966 /* Pods-Scan me! calculator.release-app-red-built-in-camera.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = T2FQ2ETBMW;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Scan me! calculator/Info.plist";
+				INFOPLIST_KEY_NSCameraUsageDescription = "$(PRODUCT_NAME) needs access to your camera to scan images and recognize text.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "$(PRODUCT_NAME) needs access to your photo library to scan images and recognize text.";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_SWIFT_FLAGS = "-DTHEME_RED -DMEDIA_CAMERA";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gorgom.scanme;
+				PRODUCT_NAME = ScanMe;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = "Release-app-red-built-in-camera";
 		};
 /* End XCBuildConfiguration section */
 
@@ -343,7 +1055,13 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CD73322429FCEFDB00899ECC /* Debug */,
+				CDAE86C42A016D5800BCB253 /* Debug-app-red-camera-roll */,
+				CDE47D442A020AAD00194C9C /* Debug-app-red-built-in-camera */,
+				CDAE86C82A016DC600BCB253 /* Debug-app-green-camera-roll */,
 				CD73322529FCEFDB00899ECC /* Release */,
+				CDAE86C62A016D7E00BCB253 /* Release-app-red-camera-roll */,
+				CDE47D462A020ACD00194C9C /* Release-app-red-built-in-camera */,
+				CDAE86CA2A016DDD00BCB253 /* Release-app-green-camera-roll */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -352,7 +1070,13 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CD73322729FCEFDB00899ECC /* Debug */,
+				CDAE86C52A016D5800BCB253 /* Debug-app-red-camera-roll */,
+				CDE47D452A020AAD00194C9C /* Debug-app-red-built-in-camera */,
+				CDAE86C92A016DC600BCB253 /* Debug-app-green-camera-roll */,
 				CD73322829FCEFDB00899ECC /* Release */,
+				CDAE86C72A016D7E00BCB253 /* Release-app-red-camera-roll */,
+				CDE47D472A020ACD00194C9C /* Release-app-red-built-in-camera */,
+				CDAE86CB2A016DDD00BCB253 /* Release-app-green-camera-roll */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
