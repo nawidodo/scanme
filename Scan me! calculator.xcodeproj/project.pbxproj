@@ -75,7 +75,6 @@
 		CDAE866D2A013EF600BCB253 /* ContentView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContentView.xib; sourceTree = "<group>"; };
 		CDAE86872A01638500BCB253 /* ScanInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanInteractor.swift; sourceTree = "<group>"; };
 		CDAE86892A01665300BCB253 /* ScanPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanPresenter.swift; sourceTree = "<group>"; };
-		CDAE86A42A0167F900BCB253 /* Scan me! calculator.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Scan me! calculator.plist"; path = "/Users/nawidodo/Development/iOS/Scan me! calculator/Scan me! calculator.plist"; sourceTree = "<absolute>"; };
 		CDAE86EA2A01715500BCB253 /* SegmentedControlFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentedControlFactory.swift; sourceTree = "<group>"; };
 		CDAE86EC2A017AC600BCB253 /* OCRService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OCRService.swift; sourceTree = "<group>"; };
 		CDAE86EE2A01846E00BCB253 /* FileService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileService.swift; sourceTree = "<group>"; };
@@ -213,7 +212,6 @@
 				CD73321E29FCEFDB00899ECC /* Assets.xcassets */,
 				CD73322029FCEFDB00899ECC /* LaunchScreen.storyboard */,
 				CDA53BD32A0233DB00B5DFF8 /* GoogleService-Info.plist */,
-				CDAE86A42A0167F900BCB253 /* Scan me! calculator.plist */,
 			);
 			path = "Supporting Files";
 			sourceTree = "<group>";
