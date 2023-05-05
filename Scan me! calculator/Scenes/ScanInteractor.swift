@@ -29,7 +29,6 @@ class ScanInteractor: NSObject, ScanInteractorProtocol {
         .main
         .object(forInfoDictionaryKey: "PrivateKey") as! String
 
-
     func addImage() {
         guard let picker = picker else { return }
         presenter?.show(picker: picker)
@@ -70,9 +69,10 @@ class ScanInteractor: NSObject, ScanInteractorProtocol {
         switch storage {
         case .localFile:
             do {
-                try fileService?.encryptAndSave(expressions,
-                                                withPassword: privateKey,
-                                                fileName: fileName)
+                try fileService?
+                    .encryptAndSave(expressions,
+                                    withPassword: privateKey,
+                                    fileName: fileName)
             } catch (let error) {
                 presenter?.display(message: error.localizedDescription)
             }

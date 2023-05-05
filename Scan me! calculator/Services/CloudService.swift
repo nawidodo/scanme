@@ -14,16 +14,21 @@ protocol CloudServiceProtocol {
 
 class FirebaseService: CloudServiceProtocol {
 
+    private let expressionsKey = "expressions"
+    private let inputKey = "input"
+    private let resultKey = "result"
+    private let dateKey = "date"
+
     func saveExpression(_ expression: Expression, completion: @escaping OCRCompletion) {
         let db = Firestore.firestore()
-        let ref = db.collection("expressions")
+        let ref = db.collection(expressionsKey)
 
         // Convert each Expression object to a dictionary
         let expressionsDict: [String : Any] =
             [
-                "input": expression.input,
-                "result": expression.result,
-                "date": Timestamp(date: expression.date)
+                inputKey: expression.input,
+                resultKey: expression.result,
+                dateKey: Timestamp(date: expression.date)
             ]
 
         // Add the array of dictionaries to Firestore
@@ -38,7 +43,7 @@ class FirebaseService: CloudServiceProtocol {
 
     func loadExpressions(completion: @escaping (Result<[Expression], Error>) -> Void) {
         let db = Firestore.firestore()
-         let ref = db.collection("expressions")
+        let ref = db.collection(expressionsKey)
 
          // Get all documents from the "expressions" collection
          ref.getDocuments { snapshot, error in
@@ -55,9 +60,9 @@ class FirebaseService: CloudServiceProtocol {
              // Convert each document to an Expression object
              let expressions = snapshot.documents.compactMap { document -> Expression? in
                  let data = document.data()
-                 guard let input = data["input"] as? String,
-                       let result = data["result"] as? Int,
-                       let dateTimestamp = data["date"] as? Timestamp
+                 guard let input = data[self.inputKey] as? String,
+                       let result = data[self.resultKey] as? Int,
+                       let dateTimestamp = data[self.dateKey] as? Timestamp
                  else { return nil }
 
                  let date = dateTimestamp.dateValue()

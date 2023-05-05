@@ -36,6 +36,9 @@ class FileService: FileServiceProtocol {
         // Load the encrypted data from the document directory
         let documentsDirectory = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!
         let encryptedDataFileURL = documentsDirectory.appendingPathComponent(fileName)
+
+        guard FileManager.default.fileExists(atPath: encryptedDataFileURL.path) else { return [] }
+
         let encryptedData = try Data(contentsOf: encryptedDataFileURL)
 
         // Derive a key from the password

@@ -47,6 +47,7 @@ class ScanViewController: UIViewController {
         buttonAdd.backgroundColor = App.color
         navigationController?.navigationBar.isTranslucent = false
         navigationController?.navigationBar.barTintColor = App.color
+        navigationController?.navigationBar.backgroundColor = App.color
     }
 
     private func reload() {

@@ -23,7 +23,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window?.rootViewController = rootNC
         window?.makeKeyAndVisible()
         FirebaseApp.configure()
-        
+
+        if #available(iOS 13.0, *) {
+            let statusBar = UIView(frame: window?.windowScene?.statusBarManager?.statusBarFrame ?? CGRect.zero)
+            statusBar.backgroundColor = App.color
+            window?.rootViewController?.view.addSubview(statusBar)
+        } else {
+            // fallback code for earlier iOS versions
+            let statusBar = UIApplication.shared.value(forKey: "statusBar") as? UIView
+            statusBar?.backgroundColor = App.color
+        }
         return true
     }
 }
