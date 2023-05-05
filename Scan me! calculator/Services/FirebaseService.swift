@@ -1,5 +1,5 @@
 //
-//  CloudService.swift
+//  FirebaseService.swift
 //  Scan me! calculator
 //
 //  Created by Nugroho Arief Widodo on 03/05/23.

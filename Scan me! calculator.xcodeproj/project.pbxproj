@@ -17,6 +17,7 @@
 		CD73321F29FCEFDB00899ECC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD73321E29FCEFDB00899ECC /* Assets.xcassets */; };
 		CD73322229FCEFDB00899ECC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD73322029FCEFDB00899ECC /* LaunchScreen.storyboard */; };
 		CD7770502A05491E0080B592 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = CD77704F2A05491E0080B592 /* FirebaseFirestore */; };
+		CD89DAF42A056420001EA0D2 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = CD89DAF32A056420001EA0D2 /* FirebaseFirestore */; };
 		CDA339852A035E3F0079B7A6 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CDA339842A035E3F0079B7A6 /* Media.xcassets */; };
 		CDA339872A035EA00079B7A6 /* OCRServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA339862A035EA00079B7A6 /* OCRServiceTests.swift */; };
 		CDA53BD42A0233DB00B5DFF8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CDA53BD32A0233DB00B5DFF8 /* GoogleService-Info.plist */; };
@@ -32,7 +33,7 @@
 		CDAE86EB2A01715500BCB253 /* SegmentedControlFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDAE86EA2A01715500BCB253 /* SegmentedControlFactory.swift */; };
 		CDAE86ED2A017AC600BCB253 /* OCRService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDAE86EC2A017AC600BCB253 /* OCRService.swift */; };
 		CDAE86EF2A01846E00BCB253 /* FileService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDAE86EE2A01846E00BCB253 /* FileService.swift */; };
-		CDAE86F12A01847E00BCB253 /* CloudService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDAE86F02A01847E00BCB253 /* CloudService.swift */; };
+		CDAE86F12A01847E00BCB253 /* FirebaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDAE86F02A01847E00BCB253 /* FirebaseService.swift */; };
 		CDAE86F32A018DAA00BCB253 /* CustomError.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDAE86F22A018DAA00BCB253 /* CustomError.swift */; };
 		CDAE86F52A019B1B00BCB253 /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDAE86F42A019B1B00BCB253 /* UIViewController+Extensions.swift */; };
 		CDF0A2732A038FDD00941C56 /* FileServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDF0A2722A038FDD00941C56 /* FileServiceTests.swift */; };
@@ -78,7 +79,7 @@
 		CDAE86EA2A01715500BCB253 /* SegmentedControlFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentedControlFactory.swift; sourceTree = "<group>"; };
 		CDAE86EC2A017AC600BCB253 /* OCRService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OCRService.swift; sourceTree = "<group>"; };
 		CDAE86EE2A01846E00BCB253 /* FileService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileService.swift; sourceTree = "<group>"; };
-		CDAE86F02A01847E00BCB253 /* CloudService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudService.swift; sourceTree = "<group>"; };
+		CDAE86F02A01847E00BCB253 /* FirebaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseService.swift; sourceTree = "<group>"; };
 		CDAE86F22A018DAA00BCB253 /* CustomError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomError.swift; sourceTree = "<group>"; };
 		CDAE86F42A019B1B00BCB253 /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
 		CDF0A2722A038FDD00941C56 /* FileServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileServiceTests.swift; sourceTree = "<group>"; };
@@ -99,6 +100,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD89DAF42A056420001EA0D2 /* FirebaseFirestore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -191,7 +193,7 @@
 			children = (
 				CDAE86EE2A01846E00BCB253 /* FileService.swift */,
 				CDAE86EC2A017AC600BCB253 /* OCRService.swift */,
-				CDAE86F02A01847E00BCB253 /* CloudService.swift */,
+				CDAE86F02A01847E00BCB253 /* FirebaseService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -269,6 +271,9 @@
 				CDA53C022A029D7900B5DFF8 /* PBXTargetDependency */,
 			);
 			name = ScanMeTests;
+			packageProductDependencies = (
+				CD89DAF32A056420001EA0D2 /* FirebaseFirestore */,
+			);
 			productName = ScanMeTests;
 			productReference = CDA53BFD2A029D7600B5DFF8 /* ScanMeTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -348,7 +353,7 @@
 				CDAE86F52A019B1B00BCB253 /* UIViewController+Extensions.swift in Sources */,
 				CDAE868A2A01665300BCB253 /* ScanPresenter.swift in Sources */,
 				CD45FA0D29FF968000457E8F /* UIView+Extensions.swift in Sources */,
-				CDAE86F12A01847E00BCB253 /* CloudService.swift in Sources */,
+				CDAE86F12A01847E00BCB253 /* FirebaseService.swift in Sources */,
 				CDAE86692A00EF0900BCB253 /* PaddingTableViewCell.swift in Sources */,
 				CDAE86EF2A01846E00BCB253 /* FileService.swift in Sources */,
 				CDA53BDC2A0298E000B5DFF8 /* ScanConfigurator.swift in Sources */,
@@ -770,7 +775,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = T2FQ2ETBMW;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.gorgom.ScanMeTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -789,7 +794,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = T2FQ2ETBMW;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.gorgom.ScanMeTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -808,7 +813,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = T2FQ2ETBMW;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.gorgom.ScanMeTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -827,7 +832,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = T2FQ2ETBMW;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.gorgom.ScanMeTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -846,7 +851,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = T2FQ2ETBMW;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.gorgom.ScanMeTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -865,7 +870,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = T2FQ2ETBMW;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.gorgom.ScanMeTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -884,7 +889,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = T2FQ2ETBMW;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.gorgom.ScanMeTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -903,7 +908,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = T2FQ2ETBMW;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.gorgom.ScanMeTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -922,7 +927,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = T2FQ2ETBMW;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.gorgom.ScanMeTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -941,7 +946,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = T2FQ2ETBMW;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.gorgom.ScanMeTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1567,6 +1572,11 @@
 
 /* Begin XCSwiftPackageProductDependency section */
 		CD77704F2A05491E0080B592 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CDF0A27A2A053D7400941C56 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		CD89DAF32A056420001EA0D2 /* FirebaseFirestore */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = CDF0A27A2A053D7400941C56 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseFirestore;

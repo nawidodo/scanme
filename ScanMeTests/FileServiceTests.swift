@@ -30,11 +30,12 @@ final class FileServiceTests: XCTestCase {
         let fileURL = documentsURL.appendingPathComponent(fileName)
 
         do {
-            if fileManager.fileExists(atPath: fileURL.path()) {
+            if fileManager.fileExists(atPath: fileURL.path) {
                 try fileManager.removeItem(at: fileURL)
             }
             try sut.encryptAndSave(expressions, withPassword: privateKey, fileName: fileName)
-            XCTAssertTrue(fileManager.fileExists(atPath: fileURL.path()))
+            XCTAssertTrue(fileManager.fileExists(atPath: fileURL.path))
+            try fileManager.removeItem(at: fileURL)
         } catch (_) {
             XCTFail()
         }
@@ -48,13 +49,13 @@ final class FileServiceTests: XCTestCase {
         let fileURL = documentsURL.appendingPathComponent(fileName)
 
         do {
-            if fileManager.fileExists(atPath: fileURL.path()) {
+            if fileManager.fileExists(atPath: fileURL.path) {
                 try fileManager.removeItem(at: fileURL)
             }
             try sut.encryptAndSave(expressions, withPassword: privateKey, fileName: fileName)
             XCTFail()
         } catch (_) {
-            XCTAssertFalse(fileManager.fileExists(atPath: fileURL.path()))
+            XCTAssertFalse(fileManager.fileExists(atPath: fileURL.path))
         }
     }
 
@@ -65,13 +66,14 @@ final class FileServiceTests: XCTestCase {
         let fileURL = documentsURL.appendingPathComponent(fileName)
 
         do {
-            if fileManager.fileExists(atPath: fileURL.path()) {
+            if fileManager.fileExists(atPath: fileURL.path) {
                 try fileManager.removeItem(at: fileURL)
             }
             try sut.encryptAndSave(expressions, withPassword: privateKey, fileName: fileName)
-            XCTAssertTrue(fileManager.fileExists(atPath: fileURL.path()))
+            XCTAssertTrue(fileManager.fileExists(atPath: fileURL.path))
             let expressions = try sut.decryptAndLoad(withPassword: privateKey, fileName: fileName, type: Expression.self)
             XCTAssertFalse(expressions.isEmpty)
+            try fileManager.removeItem(at: fileURL)
         } catch (_) {
             XCTFail()
         }
@@ -84,12 +86,12 @@ final class FileServiceTests: XCTestCase {
         let fileURL = documentsURL.appendingPathComponent(fileName)
 
         do {
-            if fileManager.fileExists(atPath: fileURL.path()) {
+            if fileManager.fileExists(atPath: fileURL.path) {
                 try fileManager.removeItem(at: fileURL)
             }
             try sut.encryptAndSave(expressions, withPassword: privateKey, fileName: fileName)
-            XCTAssertTrue(fileManager.fileExists(atPath: fileURL.path()))
-            let expressions = try sut.decryptAndLoad(withPassword: UUID().uuidString, fileName: fileName, type: Expression.self)
+            XCTAssertTrue(fileManager.fileExists(atPath: fileURL.path))
+            let _ = try sut.decryptAndLoad(withPassword: UUID().uuidString, fileName: fileName, type: Expression.self)
             XCTFail()
         } catch (let err) {
             XCTAssertNotNil(err)

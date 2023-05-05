@@ -109,7 +109,7 @@ final class ScanInteractorTests: XCTestCase {
         let storage = ScanMe.Storage.localFile
         sut.storage = storage
         fileService.isError = false
-        sut.saveData()
+        sut.saveExpressions()
         XCTAssertTrue(fileService.isEncryptAndSaveCalled)
     }
 
@@ -117,7 +117,7 @@ final class ScanInteractorTests: XCTestCase {
         let storage = ScanMe.Storage.localFile
         sut.storage = storage
         fileService.isError = true
-        sut.saveData()
+        sut.saveExpressions()
         XCTAssertTrue(fileService.isEncryptAndSaveCalled)
         XCTAssertTrue(presenter.isDisplayMessageCalled)
         XCTAssertEqual(presenter.message, CustomError.unknown.localizedDescription)
@@ -128,7 +128,7 @@ final class ScanInteractorTests: XCTestCase {
         sut.storage = storage
         cloudService.isError = false
         sut.expressions = ExpressionFactory.array()
-        sut.saveData()
+        sut.saveExpressions()
         XCTAssertTrue(cloudService.isSaveExpressionCalled)
     }
 
@@ -137,7 +137,7 @@ final class ScanInteractorTests: XCTestCase {
         sut.storage = storage
         cloudService.isError = true
         sut.expressions = ExpressionFactory.array()
-        sut.saveData()
+        sut.saveExpressions()
         XCTAssertTrue(cloudService.isSaveExpressionCalled)
         XCTAssertTrue(presenter.isDisplayMessageCalled)
         XCTAssertEqual(presenter.message, CustomError.unknown.localizedDescription)

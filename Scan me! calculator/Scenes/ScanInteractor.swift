@@ -64,7 +64,7 @@ class ScanInteractor: NSObject, ScanInteractorProtocol {
         }
     }
 
-    func saveData() {
+    func saveExpressions() {
 
         switch storage {
         case .localFile:
@@ -100,7 +100,7 @@ extension ScanInteractor: UIImagePickerControllerDelegate, UINavigationControlle
                 case .success(let expression):
                     self?.presenter?.displayNew(expression: expression)
                     self?.expressions.append(expression)
-                    self?.saveData()
+                    self?.saveExpressions()
                 case .failure(let error):
                     self?.presenter?.display(message: error.localizedDescription)
                 }
