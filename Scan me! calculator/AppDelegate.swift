@@ -17,16 +17,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
 
         window = UIWindow(frame: UIScreen.main.bounds)
-        let rootVC = ScanViewController()
-        let interactor = ScanInteractor()
-        let presenter = ScanPresenter()
-        interactor.presenter = presenter
-        interactor.ocrService = OCRService()
-        interactor.fileService = FileService()
-        interactor.cloudService = FirebaseService()
-        presenter.view = rootVC
-        rootVC.interactor = interactor
-        let rootNC = UINavigationController(rootViewController: rootVC)
+
+        let rootNC = UINavigationController(rootViewController: ScanConfigurator().configure())
+
         window?.rootViewController = rootNC
         window?.makeKeyAndVisible()
         FirebaseApp.configure()

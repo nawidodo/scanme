@@ -26,8 +26,30 @@
       buildConfiguration = "Debug-app-red-camera-roll"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      shouldUseLaunchSchemeArgsEnv = "YES">
+      shouldUseLaunchSchemeArgsEnv = "YES"
+      codeCoverageEnabled = "YES"
+      onlyGenerateCoverageForSpecifiedTargets = "YES">
+      <CodeCoverageTargets>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "CD73321129FCEFDA00899ECC"
+            BuildableName = "ScanMe.app"
+            BlueprintName = "Scan me! calculator"
+            ReferencedContainer = "container:Scan me! calculator.xcodeproj">
+         </BuildableReference>
+      </CodeCoverageTargets>
       <Testables>
+         <TestableReference
+            skipped = "NO"
+            parallelizable = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "CDA53BFC2A029D7600B5DFF8"
+               BuildableName = "ScanMeTests.xctest"
+               BlueprintName = "ScanMeTests"
+               ReferencedContainer = "container:Scan me! calculator.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction

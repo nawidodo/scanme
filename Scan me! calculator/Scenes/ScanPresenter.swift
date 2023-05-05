@@ -14,15 +14,6 @@ protocol ScanPresenterProtocol {
     func display(message: String)
 }
 
-protocol ScanViewProtocol {
-    func getNewResult(expression: Expression)
-    func reload(expressions: [Expression])
-    func present(_ viewControllerToPresent: UIViewController,
-                 animated flag: Bool,
-                 completion: (() -> Void)?)
-    func showMessage(title: String?, message: String)
-}
-
 class ScanPresenter: ScanPresenterProtocol {
 
     var view: ScanViewProtocol?
@@ -37,7 +28,7 @@ class ScanPresenter: ScanPresenterProtocol {
     }
 
     func display(message: String) {
-        view?.showMessage(title: nil, message: message)
+        view?.showMessage(title: nil, message: message, completion: nil)
     }
 
     func displayNew(expression: Expression) {

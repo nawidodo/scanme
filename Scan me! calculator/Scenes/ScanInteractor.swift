@@ -22,15 +22,16 @@ class ScanInteractor: NSObject, ScanInteractorProtocol {
 
     var storage: Storage = .localFile
     var expressions: [Expression] = []
+    var picker: UIImagePickerController?
+
     private let fileName = "exp.enc"
     private let privateKey = Bundle
         .main
         .object(forInfoDictionaryKey: "PrivateKey") as! String
 
+
     func addImage() {
-        let picker = UIImagePickerController()
-        picker.sourceType = App.input
-        picker.delegate = self
+        guard let picker = picker else { return }
         presenter?.show(picker: picker)
     }
 

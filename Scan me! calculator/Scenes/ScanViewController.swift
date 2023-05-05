@@ -7,6 +7,15 @@
 
 import UIKit
 
+protocol ScanViewProtocol {
+    func getNewResult(expression: Expression)
+    func reload(expressions: [Expression])
+    func present(_ viewControllerToPresent: UIViewController,
+                 animated flag: Bool,
+                 completion: (() -> Void)?)
+    func showMessage(title: String?, message: String, completion: VoidCompletion?)
+}
+
 class ScanViewController: UIViewController {
 
     var interactor: ScanInteractorProtocol?
@@ -14,7 +23,8 @@ class ScanViewController: UIViewController {
     @IBOutlet var tableView: UITableView!
     @IBOutlet var buttonAdd: UIButton!
 
-    private let segmentedControl = SegmentedControlFactory().build(titles: ["Local File", "Cloud DB"])
+    public let segmentedControl = SegmentedControlFactory()
+                                    .build(titles: ["Local File", "Cloud DB"])
     
     private var expressions: [Expression] = []
     private let cellID: String = "ContentView"
@@ -61,6 +71,7 @@ extension ScanViewController: UITableViewDataSource {
 
             let index = expressions.count - indexPath.row - 1
             let data = expressions[index]
+
             customView.backgroundColor = .white
             customView.inputLabel.text = data.input
             customView.inputLabel.textColor = App.color
@@ -75,12 +86,6 @@ extension ScanViewController: UITableViewDataSource {
         } else {
             return UITableViewCell()
         }
-    }
-}
-
-extension ScanViewController: UITableViewDelegate {
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        tableView.deselectRow(at: indexPath, animated: true)
     }
 }
 
