@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4424D3E2D88B38CAE02547C7 /* Pods_Scan_me__calculator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3E3CB92CE97C1536491297B /* Pods_Scan_me__calculator.framework */; };
+		C390BD024EF53280BCBC3D9B /* Pods_Scan_me__calculator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDD2BA1AD515288A932C5768 /* Pods_Scan_me__calculator.framework */; };
 		CD45FA0629FF865400457E8F /* ScanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD45FA0429FF865400457E8F /* ScanViewController.swift */; };
 		CD45FA0729FF865400457E8F /* ScanViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD45FA0529FF865400457E8F /* ScanViewController.xib */; };
 		CD45FA0929FF87EB00457E8F /* Expression.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD45FA0829FF87EB00457E8F /* Expression.swift */; };
@@ -53,15 +53,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		111B3295E8A21B037B8FDE3F /* Pods-Scan me! calculator.debug-app-red-built-in-camera.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Scan me! calculator.debug-app-red-built-in-camera.xcconfig"; path = "Target Support Files/Pods-Scan me! calculator/Pods-Scan me! calculator.debug-app-red-built-in-camera.xcconfig"; sourceTree = "<group>"; };
-		13001027816EB38CA635E21C /* Pods-Scan me! calculator.release-app-red-built-in-camera.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Scan me! calculator.release-app-red-built-in-camera.xcconfig"; path = "Target Support Files/Pods-Scan me! calculator/Pods-Scan me! calculator.release-app-red-built-in-camera.xcconfig"; sourceTree = "<group>"; };
-		2282E393B536509C24360E90 /* Pods-Scan me! calculator.debug-app-green-built-in-camera.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Scan me! calculator.debug-app-green-built-in-camera.xcconfig"; path = "Target Support Files/Pods-Scan me! calculator/Pods-Scan me! calculator.debug-app-green-built-in-camera.xcconfig"; sourceTree = "<group>"; };
-		52107BB5325322D24819224A /* Pods-Scan me! calculator.release-app-red-camera-roll.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Scan me! calculator.release-app-red-camera-roll.xcconfig"; path = "Target Support Files/Pods-Scan me! calculator/Pods-Scan me! calculator.release-app-red-camera-roll.xcconfig"; sourceTree = "<group>"; };
-		654F7557837E05E8C648D18C /* Pods-Scan me! calculator.debug-app-red-camera-roll.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Scan me! calculator.debug-app-red-camera-roll.xcconfig"; path = "Target Support Files/Pods-Scan me! calculator/Pods-Scan me! calculator.debug-app-red-camera-roll.xcconfig"; sourceTree = "<group>"; };
-		773533DDADC1FB93EAD06EA5 /* Pods-Scan me! calculator.debug-app-green-camera-roll.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Scan me! calculator.debug-app-green-camera-roll.xcconfig"; path = "Target Support Files/Pods-Scan me! calculator/Pods-Scan me! calculator.debug-app-green-camera-roll.xcconfig"; sourceTree = "<group>"; };
-		A3E3CB92CE97C1536491297B /* Pods_Scan_me__calculator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Scan_me__calculator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		ADEBF022DF678248855FC542 /* Pods-Scan me! calculator.release-app-green-camera-roll.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Scan me! calculator.release-app-green-camera-roll.xcconfig"; path = "Target Support Files/Pods-Scan me! calculator/Pods-Scan me! calculator.release-app-green-camera-roll.xcconfig"; sourceTree = "<group>"; };
-		B1D24F0251C9D2B76F31A4D7 /* Pods-Scan me! calculator.release-app-green-built-in-camera.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Scan me! calculator.release-app-green-built-in-camera.xcconfig"; path = "Target Support Files/Pods-Scan me! calculator/Pods-Scan me! calculator.release-app-green-built-in-camera.xcconfig"; sourceTree = "<group>"; };
+		006FAED2A9870493A22D15E9 /* Pods-Scan me! calculator.release-app-red-camera-roll.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Scan me! calculator.release-app-red-camera-roll.xcconfig"; path = "Target Support Files/Pods-Scan me! calculator/Pods-Scan me! calculator.release-app-red-camera-roll.xcconfig"; sourceTree = "<group>"; };
+		31D31E77473C37224DBACE55 /* Pods-Scan me! calculator.release-app-green-built-in-camera.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Scan me! calculator.release-app-green-built-in-camera.xcconfig"; path = "Target Support Files/Pods-Scan me! calculator/Pods-Scan me! calculator.release-app-green-built-in-camera.xcconfig"; sourceTree = "<group>"; };
+		4A1C797A311DA590CC9A0C56 /* Pods-Scan me! calculator.release-app-red-built-in-camera.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Scan me! calculator.release-app-red-built-in-camera.xcconfig"; path = "Target Support Files/Pods-Scan me! calculator/Pods-Scan me! calculator.release-app-red-built-in-camera.xcconfig"; sourceTree = "<group>"; };
+		7D0FDB2BE01A08D59D6111C4 /* Pods-Scan me! calculator.debug-app-green-camera-roll.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Scan me! calculator.debug-app-green-camera-roll.xcconfig"; path = "Target Support Files/Pods-Scan me! calculator/Pods-Scan me! calculator.debug-app-green-camera-roll.xcconfig"; sourceTree = "<group>"; };
+		906D218DB5B0CDF8F081421F /* Pods-Scan me! calculator.debug-app-red-built-in-camera.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Scan me! calculator.debug-app-red-built-in-camera.xcconfig"; path = "Target Support Files/Pods-Scan me! calculator/Pods-Scan me! calculator.debug-app-red-built-in-camera.xcconfig"; sourceTree = "<group>"; };
+		AD34C986E6594527B8AA75C7 /* Pods-Scan me! calculator.release-app-green-camera-roll.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Scan me! calculator.release-app-green-camera-roll.xcconfig"; path = "Target Support Files/Pods-Scan me! calculator/Pods-Scan me! calculator.release-app-green-camera-roll.xcconfig"; sourceTree = "<group>"; };
 		CD45FA0429FF865400457E8F /* ScanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanViewController.swift; sourceTree = "<group>"; };
 		CD45FA0529FF865400457E8F /* ScanViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ScanViewController.xib; sourceTree = "<group>"; };
 		CD45FA0829FF87EB00457E8F /* Expression.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Expression.swift; sourceTree = "<group>"; };
@@ -97,6 +94,9 @@
 		CDF0A2722A038FDD00941C56 /* FileServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileServiceTests.swift; sourceTree = "<group>"; };
 		CDF0A2742A0397C300941C56 /* UIViewExtensionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtensionTests.swift; sourceTree = "<group>"; };
 		CDF0A2762A039A5E00941C56 /* UIViewControllerExtensionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtensionsTests.swift; sourceTree = "<group>"; };
+		E2BBC9786C1A0E6F4C8FA524 /* Pods-Scan me! calculator.debug-app-red-camera-roll.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Scan me! calculator.debug-app-red-camera-roll.xcconfig"; path = "Target Support Files/Pods-Scan me! calculator/Pods-Scan me! calculator.debug-app-red-camera-roll.xcconfig"; sourceTree = "<group>"; };
+		E742060510995A3981E0E6A2 /* Pods-Scan me! calculator.debug-app-green-built-in-camera.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Scan me! calculator.debug-app-green-built-in-camera.xcconfig"; path = "Target Support Files/Pods-Scan me! calculator/Pods-Scan me! calculator.debug-app-green-built-in-camera.xcconfig"; sourceTree = "<group>"; };
+		EDD2BA1AD515288A932C5768 /* Pods_Scan_me__calculator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Scan_me__calculator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,7 +104,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4424D3E2D88B38CAE02547C7 /* Pods_Scan_me__calculator.framework in Frameworks */,
+				C390BD024EF53280BCBC3D9B /* Pods_Scan_me__calculator.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -118,10 +118,10 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0BA585949228CDED04BD47B6 /* Frameworks */ = {
+		321E3D400A333A2B246CBD19 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				A3E3CB92CE97C1536491297B /* Pods_Scan_me__calculator.framework */,
+				EDD2BA1AD515288A932C5768 /* Pods_Scan_me__calculator.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -129,14 +129,14 @@
 		7245011B170A26012BDEDD91 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				654F7557837E05E8C648D18C /* Pods-Scan me! calculator.debug-app-red-camera-roll.xcconfig */,
-				111B3295E8A21B037B8FDE3F /* Pods-Scan me! calculator.debug-app-red-built-in-camera.xcconfig */,
-				773533DDADC1FB93EAD06EA5 /* Pods-Scan me! calculator.debug-app-green-camera-roll.xcconfig */,
-				2282E393B536509C24360E90 /* Pods-Scan me! calculator.debug-app-green-built-in-camera.xcconfig */,
-				52107BB5325322D24819224A /* Pods-Scan me! calculator.release-app-red-camera-roll.xcconfig */,
-				13001027816EB38CA635E21C /* Pods-Scan me! calculator.release-app-red-built-in-camera.xcconfig */,
-				ADEBF022DF678248855FC542 /* Pods-Scan me! calculator.release-app-green-camera-roll.xcconfig */,
-				B1D24F0251C9D2B76F31A4D7 /* Pods-Scan me! calculator.release-app-green-built-in-camera.xcconfig */,
+				E2BBC9786C1A0E6F4C8FA524 /* Pods-Scan me! calculator.debug-app-red-camera-roll.xcconfig */,
+				906D218DB5B0CDF8F081421F /* Pods-Scan me! calculator.debug-app-red-built-in-camera.xcconfig */,
+				7D0FDB2BE01A08D59D6111C4 /* Pods-Scan me! calculator.debug-app-green-camera-roll.xcconfig */,
+				E742060510995A3981E0E6A2 /* Pods-Scan me! calculator.debug-app-green-built-in-camera.xcconfig */,
+				006FAED2A9870493A22D15E9 /* Pods-Scan me! calculator.release-app-red-camera-roll.xcconfig */,
+				4A1C797A311DA590CC9A0C56 /* Pods-Scan me! calculator.release-app-red-built-in-camera.xcconfig */,
+				AD34C986E6594527B8AA75C7 /* Pods-Scan me! calculator.release-app-green-camera-roll.xcconfig */,
+				31D31E77473C37224DBACE55 /* Pods-Scan me! calculator.release-app-green-built-in-camera.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -148,7 +148,7 @@
 				CDA53BFE2A029D7900B5DFF8 /* ScanMeTests */,
 				CD73321329FCEFDA00899ECC /* Products */,
 				7245011B170A26012BDEDD91 /* Pods */,
-				0BA585949228CDED04BD47B6 /* Frameworks */,
+				321E3D400A333A2B246CBD19 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -263,11 +263,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CD73322629FCEFDB00899ECC /* Build configuration list for PBXNativeTarget "Scan me! calculator" */;
 			buildPhases = (
-				84E4D6DF7537A3F36B211DA6 /* [CP] Check Pods Manifest.lock */,
+				B2A9CB8E4D8BBCE326E963BA /* [CP] Check Pods Manifest.lock */,
 				CD73320E29FCEFDA00899ECC /* Sources */,
 				CD73320F29FCEFDA00899ECC /* Frameworks */,
 				CD73321029FCEFDA00899ECC /* Resources */,
-				9DCE9466CF6BF92391ACC807 /* [CP] Embed Pods Frameworks */,
+				2B28845A31BF6AC1DFEBEC64 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -360,7 +360,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		84E4D6DF7537A3F36B211DA6 /* [CP] Check Pods Manifest.lock */ = {
+		2B28845A31BF6AC1DFEBEC64 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Scan me! calculator/Pods-Scan me! calculator-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Scan me! calculator/Pods-Scan me! calculator-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Scan me! calculator/Pods-Scan me! calculator-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B2A9CB8E4D8BBCE326E963BA /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -380,23 +397,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		9DCE9466CF6BF92391ACC807 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Scan me! calculator/Pods-Scan me! calculator-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Scan me! calculator/Pods-Scan me! calculator-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Scan me! calculator/Pods-Scan me! calculator-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -524,7 +524,7 @@
 		};
 		CDA53BD72A0294D000B5DFF8 /* Debug-app-green-built-in-camera */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2282E393B536509C24360E90 /* Pods-Scan me! calculator.debug-app-green-built-in-camera.xcconfig */;
+			baseConfigurationReference = E742060510995A3981E0E6A2 /* Pods-Scan me! calculator.debug-app-green-built-in-camera.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = GreenIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -614,7 +614,7 @@
 		};
 		CDA53BD92A0294FD00B5DFF8 /* Release-app-green-built-in-camera */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B1D24F0251C9D2B76F31A4D7 /* Pods-Scan me! calculator.release-app-green-built-in-camera.xcconfig */;
+			baseConfigurationReference = 31D31E77473C37224DBACE55 /* Pods-Scan me! calculator.release-app-green-built-in-camera.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = GreenIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -862,7 +862,7 @@
 		};
 		CDAE86C52A016D5800BCB253 /* Debug-app-red-camera-roll */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 654F7557837E05E8C648D18C /* Pods-Scan me! calculator.debug-app-red-camera-roll.xcconfig */;
+			baseConfigurationReference = E2BBC9786C1A0E6F4C8FA524 /* Pods-Scan me! calculator.debug-app-red-camera-roll.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = RedIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -952,7 +952,7 @@
 		};
 		CDAE86C72A016D7E00BCB253 /* Release-app-red-camera-roll */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 52107BB5325322D24819224A /* Pods-Scan me! calculator.release-app-red-camera-roll.xcconfig */;
+			baseConfigurationReference = 006FAED2A9870493A22D15E9 /* Pods-Scan me! calculator.release-app-red-camera-roll.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = RedIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -1048,7 +1048,7 @@
 		};
 		CDAE86C92A016DC600BCB253 /* Debug-app-green-camera-roll */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 773533DDADC1FB93EAD06EA5 /* Pods-Scan me! calculator.debug-app-green-camera-roll.xcconfig */;
+			baseConfigurationReference = 7D0FDB2BE01A08D59D6111C4 /* Pods-Scan me! calculator.debug-app-green-camera-roll.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = GreenIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -1138,7 +1138,7 @@
 		};
 		CDAE86CB2A016DDD00BCB253 /* Release-app-green-camera-roll */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = ADEBF022DF678248855FC542 /* Pods-Scan me! calculator.release-app-green-camera-roll.xcconfig */;
+			baseConfigurationReference = AD34C986E6594527B8AA75C7 /* Pods-Scan me! calculator.release-app-green-camera-roll.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = GreenIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -1234,7 +1234,7 @@
 		};
 		CDE47D452A020AAD00194C9C /* Debug-app-red-built-in-camera */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 111B3295E8A21B037B8FDE3F /* Pods-Scan me! calculator.debug-app-red-built-in-camera.xcconfig */;
+			baseConfigurationReference = 906D218DB5B0CDF8F081421F /* Pods-Scan me! calculator.debug-app-red-built-in-camera.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = RedIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -1324,7 +1324,7 @@
 		};
 		CDE47D472A020ACD00194C9C /* Release-app-red-built-in-camera */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 13001027816EB38CA635E21C /* Pods-Scan me! calculator.release-app-red-built-in-camera.xcconfig */;
+			baseConfigurationReference = 4A1C797A311DA590CC9A0C56 /* Pods-Scan me! calculator.release-app-red-built-in-camera.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = RedIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
