@@ -175,20 +175,6 @@ code_sign_if_enabled() {
   fi
 }
 
-if [[ "$CONFIGURATION" == "Debug" ]]; then
-  install_framework "${BUILT_PRODUCTS_DIR}/BoringSSL-GRPC/openssl_grpc.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/FirebaseCore/FirebaseCore.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/FirebaseCoreInternal/FirebaseCoreInternal.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/FirebaseFirestore/FirebaseFirestore.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/Libuv-gRPC/uv.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/PromisesObjC/FBLPromises.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/abseil/absl.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/gRPC-C++/grpcpp.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/gRPC-Core/grpc.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework"
-fi
 if [[ "$CONFIGURATION" == "Debug-app-green-built-in-camera" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/BoringSSL-GRPC/openssl_grpc.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/FirebaseCore/FirebaseCore.framework"
@@ -232,20 +218,6 @@ if [[ "$CONFIGURATION" == "Debug-app-red-built-in-camera" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework"
 fi
 if [[ "$CONFIGURATION" == "Debug-app-red-camera-roll" ]]; then
-  install_framework "${BUILT_PRODUCTS_DIR}/BoringSSL-GRPC/openssl_grpc.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/FirebaseCore/FirebaseCore.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/FirebaseCoreInternal/FirebaseCoreInternal.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/FirebaseFirestore/FirebaseFirestore.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/Libuv-gRPC/uv.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/PromisesObjC/FBLPromises.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/abseil/absl.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/gRPC-C++/grpcpp.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/gRPC-Core/grpc.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework"
-fi
-if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/BoringSSL-GRPC/openssl_grpc.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/FirebaseCore/FirebaseCore.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/FirebaseCoreInternal/FirebaseCoreInternal.framework"
