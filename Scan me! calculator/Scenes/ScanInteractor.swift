@@ -24,18 +24,18 @@ class ScanInteractor: NSObject, ScanInteractorProtocol {
     var expressions: [Expression] = []
     var picker: UIImagePickerController?
 
-    private let fileName = "exp.enc"
-    private let privateKey = Bundle
+    private let fileName: String = "exp.enc"
+    private let privateKey: String = Bundle
         .main
         .object(forInfoDictionaryKey: "PrivateKey") as! String
 
     func addImage() {
-        guard let picker = picker else { return }
+        guard let picker: UIImagePickerController = picker else { return }
         presenter?.show(picker: picker)
     }
 
     func changeStorage(_ storage: Storage?) {
-        guard let storage = storage else { return }
+        guard let storage: Storage = storage else { return }
         self.storage = storage
         loadExpressions()
     }
@@ -44,7 +44,7 @@ class ScanInteractor: NSObject, ScanInteractorProtocol {
 
         switch storage {
         case .localFile:
-            guard let expressions = try? fileService?
+            guard let expressions: [Expression] = try? fileService?
                 .decryptAndLoad(withPassword: privateKey,
                                 fileName: fileName,
                                 type: Expression.self) else {return}
@@ -78,7 +78,7 @@ class ScanInteractor: NSObject, ScanInteractorProtocol {
             }
 
         case .cloudDB:
-            guard let lastData = expressions.last else { return }
+            guard let lastData: Expression = expressions.last else { return }
             cloudService?.saveExpression(lastData) { [weak self] result in
                 switch result {
                 case .failure(let error):
@@ -94,7 +94,8 @@ class ScanInteractor: NSObject, ScanInteractorProtocol {
 extension ScanInteractor: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         picker.dismiss(animated: true, completion: nil)
-        if let image = info[UIImagePickerController.InfoKey.originalImage] as? UIImage {
+
+        if let image: UIImage = info[UIImagePickerController.InfoKey.originalImage] as? UIImage {
             ocrService?.recognizeText(image: image) { [weak self] result in
                 switch result {
                 case .success(let expression):

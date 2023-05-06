@@ -15,9 +15,9 @@ final class ScanViewControllerTests: XCTestCase {
 
     override func setUp() {
         super.setUp()
-        window = UIWindow()
-        sut = ScanViewController()
-        interactor = ScanInteractorSpy()
+        window = .init()
+        sut = .init()
+        interactor = .init()
         sut.interactor = interactor
     }
 
@@ -30,12 +30,13 @@ final class ScanViewControllerTests: XCTestCase {
 
     func loadView() {
         window.addSubview(sut.view)
-        RunLoop.current.run(until: Date())
+        RunLoop.current.run(until: Date(timeIntervalSinceNow: 2))
     }
 
     func testAddImage() {
         loadView()
         sut.buttonAdd.sendActions(for: .touchUpInside)
+
         XCTAssertTrue(interactor.isAddImageCalled)
     }
 
@@ -43,10 +44,13 @@ final class ScanViewControllerTests: XCTestCase {
         loadView()
         sut.segmentedControl.selectedSegmentIndex = 1
         sut.segmentedControl.sendActions(for: .valueChanged)
+
         XCTAssertTrue(interactor.isChangeStorageCalled)
         XCTAssertEqual(interactor.storage, .cloudDB)
+
         sut.segmentedControl.selectedSegmentIndex = 0
         sut.segmentedControl.sendActions(for: .valueChanged)
+
         XCTAssertEqual(interactor.storage, .localFile)
     }
 
@@ -58,17 +62,23 @@ final class ScanViewControllerTests: XCTestCase {
     func testLoadExpressionFromStorage() {
         loadView()
 
-        let expressions = ExpressionFactory.array()
+        let expressions: [Expression] = ExpressionFactory.array()
+
         XCTAssertEqual(sut.tableView.visibleCells.count, 0)
+
         sut.reload(expressions: expressions)
+
         XCTAssertEqual(sut.tableView.visibleCells.count, 2)
     }
 
     func testGetNewExpression() {
         loadView()
-        let expression = ExpressionFactory.single()
+        let expression: Expression = ExpressionFactory.single()
+
         XCTAssertEqual(sut.tableView.visibleCells.count, 0)
+
         sut.getNewResult(expression: expression)
+        
         XCTAssertEqual(sut.tableView.visibleCells.count, 1)
     }
 
@@ -76,9 +86,9 @@ final class ScanViewControllerTests: XCTestCase {
 
 class ScanInteractorSpy: ScanInteractorProtocol {
 
-    var isAddImageCalled = false
-    var isChangeStorageCalled = false
-    var isLoadExpressionsCalled = false
+    var isAddImageCalled: Bool = false
+    var isChangeStorageCalled: Bool = false
+    var isLoadExpressionsCalled: Bool = false
     var storage: ScanMe.Storage?
 
     func addImage() {

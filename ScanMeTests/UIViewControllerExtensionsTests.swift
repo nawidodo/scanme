@@ -14,8 +14,8 @@ class UIViewControllerExtensionTests: XCTestCase {
 
     override func setUp() {
         super.setUp()
-        sut = UIViewController()
-        window = UIWindow()
+        sut = .init()
+        window = .init()
     }
 
     override func tearDown() {
@@ -32,7 +32,7 @@ class UIViewControllerExtensionTests: XCTestCase {
     func testShowAlert() {
         // Create an expectation for the alert
         loadView()
-        let alertExpectation = expectation(description: "Alert was shown")
+        let alertExpectation: XCTestExpectation = expectation(description: "Alert was shown")
 
         // Set up the alert completion handler
         sut.showMessage(message: "This is a test alert") {

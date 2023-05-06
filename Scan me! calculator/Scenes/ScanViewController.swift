@@ -13,7 +13,7 @@ protocol ScanViewProtocol {
     func present(_ viewControllerToPresent: UIViewController,
                  animated flag: Bool,
                  completion: (() -> Void)?)
-    func showMessage(title: String?, message: String, completion: VoidCompletion?)
+    func showMessage(title: String?, message: String, completion: (() -> Void)?)
 }
 
 class ScanViewController: UIViewController {
@@ -23,8 +23,7 @@ class ScanViewController: UIViewController {
     @IBOutlet var tableView: UITableView!
     @IBOutlet var buttonAdd: UIButton!
 
-    public let segmentedControl = SegmentedControlFactory()
-                                    .build(titles: ["Local File", "Cloud DB"])
+    let segmentedControl: UISegmentedControl = .build(titles: ["Local File", "Cloud DB"])
     
     private var expressions: [Expression] = []
     private let cellID: String = "ContentView"
@@ -41,10 +40,10 @@ class ScanViewController: UIViewController {
 
     private func setupUI(){
         tableView.register(PaddingTableViewCell.self, forCellReuseIdentifier: cellID)
-        navigationItem.titleView = segmentedControl
-
         segmentedControl.addTarget(self, action: #selector(segmentedControlValueChanged), for: .valueChanged)
+
         buttonAdd.backgroundColor = App.color
+        navigationItem.titleView = segmentedControl
         navigationController?.navigationBar.isTranslucent = false
         navigationController?.navigationBar.barTintColor = App.color
         navigationController?.navigationBar.backgroundColor = App.color
@@ -52,6 +51,7 @@ class ScanViewController: UIViewController {
 
     private func reload() {
         tableView.reloadData()
+        view.unlock()
     }
 
     override func viewDidLoad() {
@@ -97,7 +97,6 @@ extension ScanViewController: ScanViewProtocol {
     }
 
     func reload(expressions: [Expression]) {
-        view.unlock()
         self.expressions = expressions
         reload()
     }

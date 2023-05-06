@@ -56,8 +56,8 @@ extension UIView {
 
     public static func getView(with identifier: String) -> UIView? {
         guard let _ = Bundle.main.path(forResource: identifier, ofType: "nib"),
-           let customviewClass = self.getClass(from: identifier),
-           let tempView = UINib(nibName: identifier, bundle: nil)
+              let customviewClass: AnyClass = self.getClass(from: identifier),
+              let tempView: UIView = UINib(nibName: identifier, bundle: nil)
             .instantiate(withOwner: nil, options: nil)
             .first as? UIView,
             tempView.classForCoder == customviewClass else {
@@ -67,8 +67,8 @@ extension UIView {
     }
 
     public static func getClass(from className: String) -> AnyClass? {
-        guard let bundleName =  Bundle.main.infoDictionary?["CFBundleExecutable"] as? String,
-              let cls = NSClassFromString("\(bundleName).\(className)") else { return nil }
+        guard let bundleName: String = Bundle.main.infoDictionary?["CFBundleExecutable"] as? String,
+              let cls: AnyClass = NSClassFromString("\(bundleName).\(className)") else { return nil }
         return cls
     }
 
@@ -77,11 +77,7 @@ extension UIView {
             if let _ = self.viewWithTag(2626) {
                 //View is already locked
             } else {
-                self.isUserInteractionEnabled = false
-                DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 2.0) {
-                    self.isUserInteractionEnabled = true
-                }
-                let lockView = UIView(frame: CGRect(x: self.bounds.minX,
+                let lockView: UIView = .init(frame: CGRect(x: self.bounds.minX,
                                                     y: self.bounds.minY,
                                                     width: UIScreen.main.bounds.width,
                                                     height: UIScreen.main.bounds.height))
@@ -89,7 +85,7 @@ extension UIView {
                 lockView.tag = 2626
                 lockView.alpha = 0.0
 
-                let activity = UIActivityIndicatorView(style: .large)
+                let activity: UIActivityIndicatorView = .init(style: .large)
                 activity.hidesWhenStopped = true
                 activity.center = lockView.center
                 activity.translatesAutoresizingMaskIntoConstraints = false

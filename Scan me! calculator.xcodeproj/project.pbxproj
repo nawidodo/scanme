@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		906FD7B909D9D53E05415229 /* Pods_Scan_me__calculator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C453E61A1F557E1233DE1D3 /* Pods_Scan_me__calculator.framework */; };
 		CD45FA0629FF865400457E8F /* ScanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD45FA0429FF865400457E8F /* ScanViewController.swift */; };
 		CD45FA0729FF865400457E8F /* ScanViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD45FA0529FF865400457E8F /* ScanViewController.xib */; };
 		CD45FA0929FF87EB00457E8F /* Expression.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD45FA0829FF87EB00457E8F /* Expression.swift */; };
@@ -16,8 +17,6 @@
 		CD73321629FCEFDA00899ECC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD73321529FCEFDA00899ECC /* AppDelegate.swift */; };
 		CD73321F29FCEFDB00899ECC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD73321E29FCEFDB00899ECC /* Assets.xcassets */; };
 		CD73322229FCEFDB00899ECC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD73322029FCEFDB00899ECC /* LaunchScreen.storyboard */; };
-		CD7770502A05491E0080B592 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = CD77704F2A05491E0080B592 /* FirebaseFirestore */; };
-		CD89DAF42A056420001EA0D2 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = CD89DAF32A056420001EA0D2 /* FirebaseFirestore */; };
 		CDA339852A035E3F0079B7A6 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CDA339842A035E3F0079B7A6 /* Media.xcassets */; };
 		CDA339872A035EA00079B7A6 /* OCRServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA339862A035EA00079B7A6 /* OCRServiceTests.swift */; };
 		CDA53BD42A0233DB00B5DFF8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CDA53BD32A0233DB00B5DFF8 /* GoogleService-Info.plist */; };
@@ -30,12 +29,12 @@
 		CDAE866E2A013EF600BCB253 /* ContentView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CDAE866D2A013EF600BCB253 /* ContentView.xib */; };
 		CDAE86882A01638500BCB253 /* ScanInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDAE86872A01638500BCB253 /* ScanInteractor.swift */; };
 		CDAE868A2A01665300BCB253 /* ScanPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDAE86892A01665300BCB253 /* ScanPresenter.swift */; };
-		CDAE86EB2A01715500BCB253 /* SegmentedControlFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDAE86EA2A01715500BCB253 /* SegmentedControlFactory.swift */; };
 		CDAE86ED2A017AC600BCB253 /* OCRService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDAE86EC2A017AC600BCB253 /* OCRService.swift */; };
 		CDAE86EF2A01846E00BCB253 /* FileService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDAE86EE2A01846E00BCB253 /* FileService.swift */; };
 		CDAE86F12A01847E00BCB253 /* FirebaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDAE86F02A01847E00BCB253 /* FirebaseService.swift */; };
 		CDAE86F32A018DAA00BCB253 /* CustomError.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDAE86F22A018DAA00BCB253 /* CustomError.swift */; };
 		CDAE86F52A019B1B00BCB253 /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDAE86F42A019B1B00BCB253 /* UIViewController+Extensions.swift */; };
+		CDBFB17D2A0600AD00615D3C /* UISegmentedControl+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDBFB17C2A0600AD00615D3C /* UISegmentedControl+Extensions.swift */; };
 		CDF0A2732A038FDD00941C56 /* FileServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDF0A2722A038FDD00941C56 /* FileServiceTests.swift */; };
 		CDF0A2752A0397C300941C56 /* UIViewExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDF0A2742A0397C300941C56 /* UIViewExtensionTests.swift */; };
 		CDF0A2772A039A5E00941C56 /* UIViewControllerExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDF0A2762A039A5E00941C56 /* UIViewControllerExtensionsTests.swift */; };
@@ -52,6 +51,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		135C2E7662D60DB2780E45A7 /* Pods-Scan me! calculator.debug-app-red-built-in-camera.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Scan me! calculator.debug-app-red-built-in-camera.xcconfig"; path = "Target Support Files/Pods-Scan me! calculator/Pods-Scan me! calculator.debug-app-red-built-in-camera.xcconfig"; sourceTree = "<group>"; };
+		179D1C8C62680F50E5E76E92 /* Pods-Scan me! calculator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Scan me! calculator.debug.xcconfig"; path = "Target Support Files/Pods-Scan me! calculator/Pods-Scan me! calculator.debug.xcconfig"; sourceTree = "<group>"; };
+		243E44AAB7B23A353017DED4 /* Pods-Scan me! calculator.release-app-green-camera-roll.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Scan me! calculator.release-app-green-camera-roll.xcconfig"; path = "Target Support Files/Pods-Scan me! calculator/Pods-Scan me! calculator.release-app-green-camera-roll.xcconfig"; sourceTree = "<group>"; };
+		86289EF7DEED3714D917ACE1 /* Pods-Scan me! calculator.release-app-red-camera-roll.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Scan me! calculator.release-app-red-camera-roll.xcconfig"; path = "Target Support Files/Pods-Scan me! calculator/Pods-Scan me! calculator.release-app-red-camera-roll.xcconfig"; sourceTree = "<group>"; };
+		8C453E61A1F557E1233DE1D3 /* Pods_Scan_me__calculator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Scan_me__calculator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		93CCC51659DB07014710FDFA /* Pods-Scan me! calculator.debug-app-green-built-in-camera.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Scan me! calculator.debug-app-green-built-in-camera.xcconfig"; path = "Target Support Files/Pods-Scan me! calculator/Pods-Scan me! calculator.debug-app-green-built-in-camera.xcconfig"; sourceTree = "<group>"; };
+		9D19DBBF242AB9868175D248 /* Pods-Scan me! calculator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Scan me! calculator.release.xcconfig"; path = "Target Support Files/Pods-Scan me! calculator/Pods-Scan me! calculator.release.xcconfig"; sourceTree = "<group>"; };
+		A3A437F335B6963DE389B075 /* Pods-Scan me! calculator.release-app-red-built-in-camera.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Scan me! calculator.release-app-red-built-in-camera.xcconfig"; path = "Target Support Files/Pods-Scan me! calculator/Pods-Scan me! calculator.release-app-red-built-in-camera.xcconfig"; sourceTree = "<group>"; };
+		C8BD427902293C4C6FB0F1BA /* Pods-Scan me! calculator.debug-app-red-camera-roll.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Scan me! calculator.debug-app-red-camera-roll.xcconfig"; path = "Target Support Files/Pods-Scan me! calculator/Pods-Scan me! calculator.debug-app-red-camera-roll.xcconfig"; sourceTree = "<group>"; };
 		CD45FA0429FF865400457E8F /* ScanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanViewController.swift; sourceTree = "<group>"; };
 		CD45FA0529FF865400457E8F /* ScanViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ScanViewController.xib; sourceTree = "<group>"; };
 		CD45FA0829FF87EB00457E8F /* Expression.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Expression.swift; sourceTree = "<group>"; };
@@ -76,15 +84,17 @@
 		CDAE866D2A013EF600BCB253 /* ContentView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContentView.xib; sourceTree = "<group>"; };
 		CDAE86872A01638500BCB253 /* ScanInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanInteractor.swift; sourceTree = "<group>"; };
 		CDAE86892A01665300BCB253 /* ScanPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanPresenter.swift; sourceTree = "<group>"; };
-		CDAE86EA2A01715500BCB253 /* SegmentedControlFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentedControlFactory.swift; sourceTree = "<group>"; };
 		CDAE86EC2A017AC600BCB253 /* OCRService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OCRService.swift; sourceTree = "<group>"; };
 		CDAE86EE2A01846E00BCB253 /* FileService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileService.swift; sourceTree = "<group>"; };
 		CDAE86F02A01847E00BCB253 /* FirebaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseService.swift; sourceTree = "<group>"; };
 		CDAE86F22A018DAA00BCB253 /* CustomError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomError.swift; sourceTree = "<group>"; };
 		CDAE86F42A019B1B00BCB253 /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
+		CDBFB17C2A0600AD00615D3C /* UISegmentedControl+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UISegmentedControl+Extensions.swift"; sourceTree = "<group>"; };
 		CDF0A2722A038FDD00941C56 /* FileServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileServiceTests.swift; sourceTree = "<group>"; };
 		CDF0A2742A0397C300941C56 /* UIViewExtensionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtensionTests.swift; sourceTree = "<group>"; };
 		CDF0A2762A039A5E00941C56 /* UIViewControllerExtensionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtensionsTests.swift; sourceTree = "<group>"; };
+		EFD3856E50491173640E43D3 /* Pods-Scan me! calculator.release-app-green-built-in-camera.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Scan me! calculator.release-app-green-built-in-camera.xcconfig"; path = "Target Support Files/Pods-Scan me! calculator/Pods-Scan me! calculator.release-app-green-built-in-camera.xcconfig"; sourceTree = "<group>"; };
+		F4BC2B93B33740A3EC478A12 /* Pods-Scan me! calculator.debug-app-green-camera-roll.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Scan me! calculator.debug-app-green-camera-roll.xcconfig"; path = "Target Support Files/Pods-Scan me! calculator/Pods-Scan me! calculator.debug-app-green-camera-roll.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,7 +102,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CD7770502A05491E0080B592 /* FirebaseFirestore in Frameworks */,
+				906FD7B909D9D53E05415229 /* Pods_Scan_me__calculator.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -100,13 +110,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CD89DAF42A056420001EA0D2 /* FirebaseFirestore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7245011B170A26012BDEDD91 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				179D1C8C62680F50E5E76E92 /* Pods-Scan me! calculator.debug.xcconfig */,
+				C8BD427902293C4C6FB0F1BA /* Pods-Scan me! calculator.debug-app-red-camera-roll.xcconfig */,
+				135C2E7662D60DB2780E45A7 /* Pods-Scan me! calculator.debug-app-red-built-in-camera.xcconfig */,
+				F4BC2B93B33740A3EC478A12 /* Pods-Scan me! calculator.debug-app-green-camera-roll.xcconfig */,
+				93CCC51659DB07014710FDFA /* Pods-Scan me! calculator.debug-app-green-built-in-camera.xcconfig */,
+				9D19DBBF242AB9868175D248 /* Pods-Scan me! calculator.release.xcconfig */,
+				86289EF7DEED3714D917ACE1 /* Pods-Scan me! calculator.release-app-red-camera-roll.xcconfig */,
+				A3A437F335B6963DE389B075 /* Pods-Scan me! calculator.release-app-red-built-in-camera.xcconfig */,
+				243E44AAB7B23A353017DED4 /* Pods-Scan me! calculator.release-app-green-camera-roll.xcconfig */,
+				EFD3856E50491173640E43D3 /* Pods-Scan me! calculator.release-app-green-built-in-camera.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		CD73320929FCEFDA00899ECC = {
 			isa = PBXGroup;
 			children = (
@@ -114,6 +140,7 @@
 				CDA53BFE2A029D7900B5DFF8 /* ScanMeTests */,
 				CD73321329FCEFDA00899ECC /* Products */,
 				CD77704A2A0547E10080B592 /* Frameworks */,
+				7245011B170A26012BDEDD91 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -132,7 +159,6 @@
 				CD73321529FCEFDA00899ECC /* AppDelegate.swift */,
 				CD73322329FCEFDB00899ECC /* Info.plist */,
 				CDA53BDF2A02999F00B5DFF8 /* Extensions */,
-				CDA53BE02A0299B700B5DFF8 /* Factories */,
 				CDA53BDE2A02998100B5DFF8 /* Models */,
 				CDA53BDA2A0298B000B5DFF8 /* Scenes */,
 				CDA53BE12A0299CA00B5DFF8 /* Services */,
@@ -145,6 +171,7 @@
 		CD77704A2A0547E10080B592 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8C453E61A1F557E1233DE1D3 /* Pods_Scan_me__calculator.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -176,16 +203,9 @@
 			children = (
 				CDAE86F42A019B1B00BCB253 /* UIViewController+Extensions.swift */,
 				CD45FA0C29FF968000457E8F /* UIView+Extensions.swift */,
+				CDBFB17C2A0600AD00615D3C /* UISegmentedControl+Extensions.swift */,
 			);
 			path = Extensions;
-			sourceTree = "<group>";
-		};
-		CDA53BE02A0299B700B5DFF8 /* Factories */ = {
-			isa = PBXGroup;
-			children = (
-				CDAE86EA2A01715500BCB253 /* SegmentedControlFactory.swift */,
-			);
-			path = Factories;
 			sourceTree = "<group>";
 		};
 		CDA53BE12A0299CA00B5DFF8 /* Services */ = {
@@ -241,18 +261,17 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CD73322629FCEFDB00899ECC /* Build configuration list for PBXNativeTarget "Scan me! calculator" */;
 			buildPhases = (
+				447D20843C995DC2C0C81BAE /* [CP] Check Pods Manifest.lock */,
 				CD73320E29FCEFDA00899ECC /* Sources */,
 				CD73320F29FCEFDA00899ECC /* Frameworks */,
 				CD73321029FCEFDA00899ECC /* Resources */,
+				36561C1E3049FA792B29194B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = "Scan me! calculator";
-			packageProductDependencies = (
-				CD77704F2A05491E0080B592 /* FirebaseFirestore */,
-			);
 			productName = "Scan me! calculator";
 			productReference = CD73321229FCEFDA00899ECC /* ScanMe.app */;
 			productType = "com.apple.product-type.application";
@@ -271,9 +290,6 @@
 				CDA53C022A029D7900B5DFF8 /* PBXTargetDependency */,
 			);
 			name = ScanMeTests;
-			packageProductDependencies = (
-				CD89DAF32A056420001EA0D2 /* FirebaseFirestore */,
-			);
 			productName = ScanMeTests;
 			productReference = CDA53BFD2A029D7600B5DFF8 /* ScanMeTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -306,9 +322,6 @@
 				Base,
 			);
 			mainGroup = CD73320929FCEFDA00899ECC;
-			packageReferences = (
-				CDF0A27A2A053D7400941C56 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
-			);
 			productRefGroup = CD73321329FCEFDA00899ECC /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -342,6 +355,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		36561C1E3049FA792B29194B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Scan me! calculator/Pods-Scan me! calculator-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Scan me! calculator/Pods-Scan me! calculator-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Scan me! calculator/Pods-Scan me! calculator-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		447D20843C995DC2C0C81BAE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Scan me! calculator-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		CD73320E29FCEFDA00899ECC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -355,11 +410,11 @@
 				CD45FA0D29FF968000457E8F /* UIView+Extensions.swift in Sources */,
 				CDAE86F12A01847E00BCB253 /* FirebaseService.swift in Sources */,
 				CDAE86692A00EF0900BCB253 /* PaddingTableViewCell.swift in Sources */,
+				CDBFB17D2A0600AD00615D3C /* UISegmentedControl+Extensions.swift in Sources */,
 				CDAE86EF2A01846E00BCB253 /* FileService.swift in Sources */,
 				CDA53BDC2A0298E000B5DFF8 /* ScanConfigurator.swift in Sources */,
 				CDAE86ED2A017AC600BCB253 /* OCRService.swift in Sources */,
 				CDAE866C2A013EB300BCB253 /* ContentView.swift in Sources */,
-				CDAE86EB2A01715500BCB253 /* SegmentedControlFactory.swift in Sources */,
 				CD73321629FCEFDA00899ECC /* AppDelegate.swift in Sources */,
 				CD45FA0629FF865400457E8F /* ScanViewController.swift in Sources */,
 				CD45FA0929FF87EB00457E8F /* Expression.swift in Sources */,
@@ -519,6 +574,7 @@
 		};
 		CD73322729FCEFDB00899ECC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 179D1C8C62680F50E5E76E92 /* Pods-Scan me! calculator.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -553,6 +609,7 @@
 		};
 		CD73322829FCEFDB00899ECC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9D19DBBF242AB9868175D248 /* Pods-Scan me! calculator.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -647,6 +704,7 @@
 		};
 		CDA53BD72A0294D000B5DFF8 /* Debug-app-green-built-in-camera */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 93CCC51659DB07014710FDFA /* Pods-Scan me! calculator.debug-app-green-built-in-camera.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -735,6 +793,7 @@
 		};
 		CDA53BD92A0294FD00B5DFF8 /* Release-app-green-built-in-camera */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EFD3856E50491173640E43D3 /* Pods-Scan me! calculator.release-app-green-built-in-camera.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -1019,6 +1078,7 @@
 		};
 		CDAE86C52A016D5800BCB253 /* Debug-app-red-camera-roll */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C8BD427902293C4C6FB0F1BA /* Pods-Scan me! calculator.debug-app-red-camera-roll.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -1107,6 +1167,7 @@
 		};
 		CDAE86C72A016D7E00BCB253 /* Release-app-red-camera-roll */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 86289EF7DEED3714D917ACE1 /* Pods-Scan me! calculator.release-app-red-camera-roll.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -1201,6 +1262,7 @@
 		};
 		CDAE86C92A016DC600BCB253 /* Debug-app-green-camera-roll */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F4BC2B93B33740A3EC478A12 /* Pods-Scan me! calculator.debug-app-green-camera-roll.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -1289,6 +1351,7 @@
 		};
 		CDAE86CB2A016DDD00BCB253 /* Release-app-green-camera-roll */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 243E44AAB7B23A353017DED4 /* Pods-Scan me! calculator.release-app-green-camera-roll.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -1383,6 +1446,7 @@
 		};
 		CDE47D452A020AAD00194C9C /* Debug-app-red-built-in-camera */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 135C2E7662D60DB2780E45A7 /* Pods-Scan me! calculator.debug-app-red-built-in-camera.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -1471,6 +1535,7 @@
 		};
 		CDE47D472A020ACD00194C9C /* Release-app-red-built-in-camera */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A3A437F335B6963DE389B075 /* Pods-Scan me! calculator.release-app-red-built-in-camera.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -1558,30 +1623,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		CDF0A27A2A053D7400941C56 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 9.0.0;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		CD77704F2A05491E0080B592 /* FirebaseFirestore */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = CDF0A27A2A053D7400941C56 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = FirebaseFirestore;
-		};
-		CD89DAF32A056420001EA0D2 /* FirebaseFirestore */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = CDF0A27A2A053D7400941C56 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = FirebaseFirestore;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = CD73320A29FCEFDA00899ECC /* Project object */;
 }

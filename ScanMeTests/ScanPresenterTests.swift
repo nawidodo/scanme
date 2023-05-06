@@ -14,8 +14,8 @@ final class ScanPresenterTests: XCTestCase {
 
     override func setUp() {
         super.setUp()
-        sut = ScanPresenter()
-        view = ScanViewControllerSpy()
+        sut = .init()
+        view = .init()
         sut.view = view
     }
 
@@ -27,9 +27,10 @@ final class ScanPresenterTests: XCTestCase {
 
     func testGetNewResult(){
 
-        let expression = ExpressionFactory.single()
-        let counter = view.expressions.count
+        let expression: Expression = ExpressionFactory.single()
+        let counter: Int = view.expressions.count
         sut.displayNew(expression: expression)
+
         XCTAssertTrue(view.isGetNewResultCalled)
         XCTAssertEqual(view.expressions.count, counter+1)
         XCTAssertEqual(view.expressions.last?.input, expression.input)
@@ -37,22 +38,25 @@ final class ScanPresenterTests: XCTestCase {
     }
 
     func testReload(){
-        let expressions = ExpressionFactory.array()
+        let expressions: [Expression] = ExpressionFactory.array()
         sut.display(expressions: expressions)
+
         XCTAssertTrue(view.isReloadCalled)
         XCTAssertEqual(view.expressions.count, expressions.count)
     }
 
     func testPresent() {
-        let vc = UIViewController()
+        let vc: UIViewController = .init()
         sut.show(picker: vc)
+
         XCTAssertTrue(view.isPresentCalled)
         XCTAssertEqual(view.viewControllerToPresent, vc)
     }
 
     func testShowMessage() {
-        let message = UUID().uuidString
+        let message:String = UUID().uuidString
         sut.display(message: message)
+
         XCTAssertTrue(view.isShowMessageCalled)
         XCTAssertEqual(message, view.message)
     }
@@ -60,10 +64,10 @@ final class ScanPresenterTests: XCTestCase {
 
 class ScanViewControllerSpy: ScanViewProtocol {
 
-    var isGetNewResultCalled = false
-    var isReloadCalled = false
-    var isPresentCalled = false
-    var isShowMessageCalled = false
+    var isGetNewResultCalled: Bool = false
+    var isReloadCalled: Bool = false
+    var isPresentCalled: Bool = false
+    var isShowMessageCalled: Bool = false
     var expressions: [ScanMe.Expression] = []
     var viewControllerToPresent: UIViewController!
     var message: String = ""
@@ -83,7 +87,7 @@ class ScanViewControllerSpy: ScanViewProtocol {
         self.viewControllerToPresent = viewControllerToPresent
     }
 
-    func showMessage(title: String?, message: String, completion: VoidCompletion?) {
+    func showMessage(title: String?, message: String, completion: (() -> Void)?) {
         isShowMessageCalled = true
         self.message = message
     }

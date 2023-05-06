@@ -17,12 +17,12 @@ class PaddingTableViewCell: UITableViewCell {
         // Add content container view
         self.backgroundColor = .clear
 
-        if let reuseIdentifier = reuseIdentifier ,let customView = UIView.getView(with: reuseIdentifier) {
+        if let reuseIdentifier: String = reuseIdentifier,
+            let customView: UIView = .getView(with: reuseIdentifier) {
             self.customView = customView
             contentView.addSubview(customView)
             customView.translatesAutoresizingMaskIntoConstraints = false
             addCustomViewConstraintWith(leading: 0, trailing: 0, bottom: 0, top: 0)
-
         }
     }
 
@@ -32,10 +32,10 @@ class PaddingTableViewCell: UITableViewCell {
 
     public func setCard(leading: CGFloat, trailing: CGFloat,bottom: CGFloat,top: CGFloat) {
 
-        if let leadingTrailing = leadingTrailingConstraint {
+        if let leadingTrailing: [NSLayoutConstraint] = leadingTrailingConstraint {
             contentView.removeConstraints(leadingTrailing)
         }
-        if let topBottom = topBottomConstraint {
+        if let topBottom: [NSLayoutConstraint] = topBottomConstraint {
             contentView.removeConstraints(topBottom)
         }
         addCustomViewConstraintWith(leading: leading, trailing: trailing,bottom: bottom,top: top)
@@ -43,12 +43,12 @@ class PaddingTableViewCell: UITableViewCell {
 
     private func addCustomViewConstraintWith(leading: CGFloat, trailing: CGFloat,bottom: CGFloat,top: CGFloat) {
 
-        if let tempView = customView {
-            let leadingTrailing = NSLayoutConstraint.constraints(withVisualFormat: "H:|-\(leading)-[view]-\(trailing)-|", options: NSLayoutConstraint.FormatOptions(rawValue: 0), metrics: nil, views: ["view":tempView])
+        if let tempView: UIView = customView {
+            let leadingTrailing: [NSLayoutConstraint] = NSLayoutConstraint.constraints(withVisualFormat: "H:|-\(leading)-[view]-\(trailing)-|", options: NSLayoutConstraint.FormatOptions(rawValue: 0), metrics: nil, views: ["view":tempView])
             contentView.addConstraints(leadingTrailing)
             leadingTrailingConstraint = leadingTrailing
 
-            let topBottom = NSLayoutConstraint.constraints(withVisualFormat: "V:|-\(top)-[view]-\(bottom)-|", options: NSLayoutConstraint.FormatOptions(rawValue: 0), metrics: nil, views: ["view":tempView])
+            let topBottom: [NSLayoutConstraint] = NSLayoutConstraint.constraints(withVisualFormat: "V:|-\(top)-[view]-\(bottom)-|", options: NSLayoutConstraint.FormatOptions(rawValue: 0), metrics: nil, views: ["view":tempView])
             contentView.addConstraints(topBottom)
             topBottomConstraint = topBottom
         }

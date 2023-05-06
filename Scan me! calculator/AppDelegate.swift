@@ -18,21 +18,22 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
         window = UIWindow(frame: UIScreen.main.bounds)
 
-        let rootNC = UINavigationController(rootViewController: ScanConfigurator().configure())
+        let rootNC: UINavigationController = .init(rootViewController: ScanConfigurator().configure())
 
         window?.rootViewController = rootNC
         window?.makeKeyAndVisible()
+
+        guard let frame = window?
+            .windowScene?
+            .statusBarManager?
+            .statusBarFrame else { return true }
+
+        let statusBar: UIView = .init(frame: frame)
+        statusBar.backgroundColor = App.color
+        window?.rootViewController?.view.addSubview(statusBar)
+
         FirebaseApp.configure()
 
-        if #available(iOS 13.0, *) {
-            let statusBar = UIView(frame: window?.windowScene?.statusBarManager?.statusBarFrame ?? CGRect.zero)
-            statusBar.backgroundColor = App.color
-            window?.rootViewController?.view.addSubview(statusBar)
-        } else {
-            // fallback code for earlier iOS versions
-            let statusBar = UIApplication.shared.value(forKey: "statusBar") as? UIView
-            statusBar?.backgroundColor = App.color
-        }
         return true
     }
 }

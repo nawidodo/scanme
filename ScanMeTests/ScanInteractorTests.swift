@@ -17,18 +17,16 @@ final class ScanInteractorTests: XCTestCase {
 
     override func setUp() {
         super.setUp()
-        sut = ScanInteractor()
-        presenter = ScanPresenterProtocolSpy()
-        fileService = MockLocalFileService()
-        cloudService = MockCloudService()
-        ocrService = MockOCRService()
+        sut = .init()
+        presenter = .init()
+        fileService = .init()
+        cloudService = .init()
+        ocrService = .init()
         sut.presenter = presenter
         sut.fileService = fileService
         sut.cloudService = cloudService
         sut.ocrService = ocrService
-        sut.picker = UIImagePickerController()
-        sut.picker?.sourceType = App.input
-        sut.picker?.delegate = sut
+        sut.picker = .init()
     }
 
     override func tearDown() {
@@ -42,23 +40,27 @@ final class ScanInteractorTests: XCTestCase {
 
     func testAddImage() {
         sut.addImage()
+
         XCTAssertTrue(presenter.isShowCalled)
         XCTAssertEqual(sut.picker, presenter.picker)
     }
 
     func testChangeStorage() {
-        let storage = ScanMe.Storage.cloudDB
+        let storage: Storage = ScanMe.Storage.cloudDB
         sut.changeStorage(storage)
+
         XCTAssertEqual(sut.storage, storage)
     }
 
     func testLoadExpressionsFromLocalFileReturnSuccess() {
-        let storage = ScanMe.Storage.localFile
-        sut.storage = storage
+        sut.storage = ScanMe.Storage.localFile
         fileService.isError = false
+
         XCTAssertEqual(sut.expressions.count, 0)
         XCTAssertEqual(presenter.expressions.count, 0)
+
         sut.loadExpressions()
+
         XCTAssertTrue(fileService.isDecryptAndLoadCalled)
         XCTAssertTrue(presenter.isDisplayCalled)
         XCTAssertEqual(sut.expressions.count, 2)
@@ -66,12 +68,14 @@ final class ScanInteractorTests: XCTestCase {
     }
 
     func testLoadExpressionsFromLocalFileReturnError() {
-        let storage = ScanMe.Storage.localFile
-        sut.storage = storage
+        sut.storage = ScanMe.Storage.localFile
         fileService.isError = true
+
         XCTAssertEqual(sut.expressions.count, 0)
         XCTAssertEqual(presenter.expressions.count, 0)
+
         sut.loadExpressions()
+        
         XCTAssertTrue(fileService.isDecryptAndLoadCalled)
         XCTAssertEqual(sut.expressions.count, 0)
         XCTAssertEqual(presenter.expressions.count, 0)
@@ -79,12 +83,14 @@ final class ScanInteractorTests: XCTestCase {
 
 
     func testLoadExpressionsFromCloudDBReturnSuccess() {
-        let storage = ScanMe.Storage.cloudDB
-        sut.storage = storage
+        sut.storage = ScanMe.Storage.cloudDB
         cloudService.isError = false
+
         XCTAssertEqual(sut.expressions.count, 0)
         XCTAssertEqual(presenter.expressions.count, 0)
+
         sut.loadExpressions()
+
         XCTAssertTrue(cloudService.isLoadExpressionsCalled)
         XCTAssertTrue(presenter.isDisplayCalled)
         XCTAssertEqual(sut.expressions.count, 2)
@@ -92,12 +98,14 @@ final class ScanInteractorTests: XCTestCase {
     }
 
     func testLoadExpressionsFromCloudDBReturnError() {
-        let storage = ScanMe.Storage.cloudDB
-        sut.storage = storage
+        sut.storage = ScanMe.Storage.cloudDB
         cloudService.isError = true
+
         XCTAssertEqual(sut.expressions.count, 0)
         XCTAssertEqual(presenter.expressions.count, 0)
+
         sut.loadExpressions()
+
         XCTAssertTrue(cloudService.isLoadExpressionsCalled)
         XCTAssertTrue(presenter.isDisplayMessageCalled)
         XCTAssertEqual(presenter.message, CustomError.unknown.localizedDescription)
@@ -106,58 +114,62 @@ final class ScanInteractorTests: XCTestCase {
     }
 
     func testSaveExpressionsToLocalFileReturnSuccess() {
-        let storage = ScanMe.Storage.localFile
-        sut.storage = storage
+        sut.storage = ScanMe.Storage.localFile
         fileService.isError = false
         sut.saveExpressions()
+
         XCTAssertTrue(fileService.isEncryptAndSaveCalled)
     }
 
     func testSaveExpressionsToLocalFileReturnError() {
-        let storage = ScanMe.Storage.localFile
-        sut.storage = storage
+        sut.storage = ScanMe.Storage.localFile
         fileService.isError = true
         sut.saveExpressions()
+
         XCTAssertTrue(fileService.isEncryptAndSaveCalled)
         XCTAssertTrue(presenter.isDisplayMessageCalled)
         XCTAssertEqual(presenter.message, CustomError.unknown.localizedDescription)
     }
 
     func testSaveExpressionsToCloudDBReturnSuccess() {
-        let storage = ScanMe.Storage.cloudDB
-        sut.storage = storage
+        sut.storage = ScanMe.Storage.cloudDB
         cloudService.isError = false
         sut.expressions = ExpressionFactory.array()
         sut.saveExpressions()
+
         XCTAssertTrue(cloudService.isSaveExpressionCalled)
     }
 
     func testSaveExpressionsToCloudDBReturnError() {
-        let storage = ScanMe.Storage.cloudDB
-        sut.storage = storage
+        sut.storage = ScanMe.Storage.cloudDB
         cloudService.isError = true
         sut.expressions = ExpressionFactory.array()
         sut.saveExpressions()
+
         XCTAssertTrue(cloudService.isSaveExpressionCalled)
         XCTAssertTrue(presenter.isDisplayMessageCalled)
         XCTAssertEqual(presenter.message, CustomError.unknown.localizedDescription)
     }
 
     func testOCRReturnSuccess() {
-        guard let picker = sut.picker else {return}
+        guard let picker: UIImagePickerController = sut.picker else {return}
+
         ocrService.isError = false
         var info: [UIImagePickerController.InfoKey : Any] = [:]
         info[UIImagePickerController.InfoKey.originalImage] = UIImage()
         sut.imagePickerController(picker, didFinishPickingMediaWithInfo: info)
+
         XCTAssertTrue(presenter.isDisplayNewCalled)
     }
 
     func testOCRReturnError() {
-        guard let picker = sut.picker else {return}
+        guard let picker: UIImagePickerController = sut.picker else {return}
+
         ocrService.isError = true
         var info: [UIImagePickerController.InfoKey : Any] = [:]
         info[UIImagePickerController.InfoKey.originalImage] = UIImage()
         sut.imagePickerController(picker, didFinishPickingMediaWithInfo: info)
+
         XCTAssertTrue(presenter.isDisplayMessageCalled)
         XCTAssertEqual(presenter.message, CustomError.expressionNotFound.localizedDescription)
     }
@@ -165,10 +177,10 @@ final class ScanInteractorTests: XCTestCase {
 
 class ScanPresenterProtocolSpy: ScanPresenterProtocol {
 
-    var isShowCalled = false
-    var isDisplayNewCalled = false
-    var isDisplayCalled = false
-    var isDisplayMessageCalled = false
+    var isShowCalled: Bool = false
+    var isDisplayNewCalled: Bool = false
+    var isDisplayCalled: Bool = false
+    var isDisplayMessageCalled: Bool = false
     var picker: UIViewController!
     var expressions: [Expression] = []
     var message: String = ""
@@ -196,9 +208,9 @@ class ScanPresenterProtocolSpy: ScanPresenterProtocol {
 
 class MockLocalFileService: FileServiceProtocol {
 
-    var isError = false
-    var isEncryptAndSaveCalled = false
-    var isDecryptAndLoadCalled = false
+    var isError: Bool = false
+    var isEncryptAndSaveCalled: Bool = false
+    var isDecryptAndLoadCalled: Bool = false
 
     func encryptAndSave<T: Codable>(_ array: [T], withPassword password: String, fileName: String) throws {
         isEncryptAndSaveCalled = true
@@ -214,9 +226,9 @@ class MockLocalFileService: FileServiceProtocol {
             throw CustomError.unknown
         }
 
-        let expressions = ExpressionFactory.array()
-        let jsonData = try JSONEncoder().encode(expressions)
-        let array = try JSONDecoder().decode([T].self, from: jsonData)
+        let expressions: [Expression] = ExpressionFactory.array()
+        let jsonData: Data = try JSONEncoder().encode(expressions)
+        let array: [T] = try JSONDecoder().decode([T].self, from: jsonData)
         return array
     }
 }
@@ -224,11 +236,11 @@ class MockLocalFileService: FileServiceProtocol {
 
 class MockCloudService: CloudServiceProtocol {
 
-    var isError = false
-    var isLoadExpressionsCalled = false
-    var isSaveExpressionCalled = false
+    var isError: Bool = false
+    var isLoadExpressionsCalled: Bool = false
+    var isSaveExpressionCalled: Bool = false
 
-    func saveExpression(_ expression: ScanMe.Expression, completion: @escaping ScanMe.OCRCompletion) {
+    func saveExpression(_ expression: ScanMe.Expression, completion: @escaping ScanMe.ExpressionCompletion) {
         isSaveExpressionCalled = true
         if isError {
             completion(.failure(CustomError.unknown))
@@ -252,9 +264,9 @@ class MockCloudService: CloudServiceProtocol {
 
 class MockOCRService: OCRServiceProtocol {
 
-    var isError = false
+    var isError: Bool = false
 
-    func recognizeText(image: UIImage, completion: @escaping ScanMe.OCRCompletion) {
+    func recognizeText(image: UIImage, completion: @escaping ScanMe.ExpressionCompletion) {
 
         if isError {
             completion(.failure(CustomError.expressionNotFound))
