@@ -59,10 +59,10 @@ class FirebaseService: CloudServiceProtocol {
 
              // Convert each document to an Expression object
              let expressions: [Expression] = snapshot.documents.compactMap { document -> Expression? in
-                 let data = document.data()
-                 guard let input = data[self.inputKey] as? String,
-                       let result = data[self.resultKey] as? Int,
-                       let dateTimestamp = data[self.dateKey] as? Timestamp
+                 let data: [String: Any] = document.data()
+                 guard let input: String = data[self.inputKey] as? String,
+                       let result: Int = data[self.resultKey] as? Int,
+                       let dateTimestamp: Timestamp = data[self.dateKey] as? Timestamp
                  else { return nil }
 
                  let date: Date = dateTimestamp.dateValue()
