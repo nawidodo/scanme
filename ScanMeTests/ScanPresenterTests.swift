@@ -31,7 +31,7 @@ final class ScanPresenterTests: XCTestCase {
         let counter: Int = view.expressions.count
         sut.displayNew(expression: expression)
 
-        XCTAssertTrue(view.isGetNewResultCalled)
+        XCTAssertTrue(view.isDidGetNewResultCalled)
         XCTAssertEqual(view.expressions.count, counter+1)
         XCTAssertEqual(view.expressions.last?.input, expression.input)
         XCTAssertEqual(view.expressions.last?.result, expression.result)
@@ -41,7 +41,7 @@ final class ScanPresenterTests: XCTestCase {
         let expressions: [Expression] = ExpressionFactory.array()
         sut.display(expressions: expressions)
 
-        XCTAssertTrue(view.isReloadCalled)
+        XCTAssertTrue(view.isDidGetExpressionsCalled)
         XCTAssertEqual(view.expressions.count, expressions.count)
     }
 
@@ -64,21 +64,21 @@ final class ScanPresenterTests: XCTestCase {
 
 class ScanViewControllerSpy: ScanViewProtocol {
 
-    var isGetNewResultCalled: Bool = false
-    var isReloadCalled: Bool = false
+    var isDidGetNewResultCalled: Bool = false
+    var isDidGetExpressionsCalled: Bool = false
     var isPresentCalled: Bool = false
     var isShowMessageCalled: Bool = false
     var expressions: [ScanMe.Expression] = []
     var viewControllerToPresent: UIViewController!
     var message: String = ""
 
-    func getNewResult(expression: ScanMe.Expression) {
-        isGetNewResultCalled = true
+    func didGetNew(expression: ScanMe.Expression) {
+        isDidGetNewResultCalled = true
         expressions.append(expression)
     }
 
-    func reload(expressions: [ScanMe.Expression]) {
-        isReloadCalled = true
+    func didGet(expressions: [ScanMe.Expression]) {
+        isDidGetExpressionsCalled = true
         self.expressions = expressions
     }
 

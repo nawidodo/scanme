@@ -66,7 +66,7 @@ final class ScanViewControllerTests: XCTestCase {
 
         XCTAssertEqual(sut.tableView.visibleCells.count, 0)
 
-        sut.reload(expressions: expressions)
+        sut.didGet(expressions: expressions)
 
         XCTAssertEqual(sut.tableView.visibleCells.count, 2)
     }
@@ -77,7 +77,7 @@ final class ScanViewControllerTests: XCTestCase {
 
         XCTAssertEqual(sut.tableView.visibleCells.count, 0)
 
-        sut.getNewResult(expression: expression)
+        sut.didGetNew(expression: expression)
         
         XCTAssertEqual(sut.tableView.visibleCells.count, 1)
     }

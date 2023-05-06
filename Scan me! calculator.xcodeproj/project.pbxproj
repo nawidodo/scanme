@@ -15,7 +15,6 @@
 		CD45FA0F29FFA45700457E8F /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD45FA0E29FFA45700457E8F /* App.swift */; };
 		CD606D422A0353C2002416C3 /* ExpressionFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD606D412A0353C2002416C3 /* ExpressionFactory.swift */; };
 		CD73321629FCEFDA00899ECC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD73321529FCEFDA00899ECC /* AppDelegate.swift */; };
-		CD73321F29FCEFDB00899ECC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD73321E29FCEFDB00899ECC /* Assets.xcassets */; };
 		CD73322229FCEFDB00899ECC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD73322029FCEFDB00899ECC /* LaunchScreen.storyboard */; };
 		CDA339852A035E3F0079B7A6 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CDA339842A035E3F0079B7A6 /* Media.xcassets */; };
 		CDA339872A035EA00079B7A6 /* OCRServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA339862A035EA00079B7A6 /* OCRServiceTests.swift */; };
@@ -35,6 +34,8 @@
 		CDAE86F32A018DAA00BCB253 /* CustomError.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDAE86F22A018DAA00BCB253 /* CustomError.swift */; };
 		CDAE86F52A019B1B00BCB253 /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDAE86F42A019B1B00BCB253 /* UIViewController+Extensions.swift */; };
 		CDBFB17D2A0600AD00615D3C /* UISegmentedControl+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDBFB17C2A0600AD00615D3C /* UISegmentedControl+Extensions.swift */; };
+		CDBFB1932A063C2D00615D3C /* Red.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CDBFB1922A063C2C00615D3C /* Red.xcassets */; };
+		CDBFB1952A063C3E00615D3C /* Green.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CDBFB1942A063C3E00615D3C /* Green.xcassets */; };
 		CDF0A2732A038FDD00941C56 /* FileServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDF0A2722A038FDD00941C56 /* FileServiceTests.swift */; };
 		CDF0A2752A0397C300941C56 /* UIViewExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDF0A2742A0397C300941C56 /* UIViewExtensionTests.swift */; };
 		CDF0A2772A039A5E00941C56 /* UIViewControllerExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDF0A2762A039A5E00941C56 /* UIViewControllerExtensionsTests.swift */; };
@@ -68,7 +69,6 @@
 		CD606D412A0353C2002416C3 /* ExpressionFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpressionFactory.swift; sourceTree = "<group>"; };
 		CD73321229FCEFDA00899ECC /* ScanMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScanMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD73321529FCEFDA00899ECC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CD73321E29FCEFDB00899ECC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CD73322129FCEFDB00899ECC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CD73322329FCEFDB00899ECC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CDA339842A035E3F0079B7A6 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
@@ -90,6 +90,8 @@
 		CDAE86F22A018DAA00BCB253 /* CustomError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomError.swift; sourceTree = "<group>"; };
 		CDAE86F42A019B1B00BCB253 /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
 		CDBFB17C2A0600AD00615D3C /* UISegmentedControl+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UISegmentedControl+Extensions.swift"; sourceTree = "<group>"; };
+		CDBFB1922A063C2C00615D3C /* Red.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Red.xcassets; sourceTree = "<group>"; };
+		CDBFB1942A063C3E00615D3C /* Green.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Green.xcassets; sourceTree = "<group>"; };
 		CDF0A2722A038FDD00941C56 /* FileServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileServiceTests.swift; sourceTree = "<group>"; };
 		CDF0A2742A0397C300941C56 /* UIViewExtensionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtensionTests.swift; sourceTree = "<group>"; };
 		CDF0A2762A039A5E00941C56 /* UIViewControllerExtensionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtensionsTests.swift; sourceTree = "<group>"; };
@@ -231,7 +233,8 @@
 		CDA53BE32A029A2C00B5DFF8 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				CD73321E29FCEFDB00899ECC /* Assets.xcassets */,
+				CDBFB1942A063C3E00615D3C /* Green.xcassets */,
+				CDBFB1922A063C2C00615D3C /* Red.xcassets */,
 				CD73322029FCEFDB00899ECC /* LaunchScreen.storyboard */,
 				CDA53BD32A0233DB00B5DFF8 /* GoogleService-Info.plist */,
 			);
@@ -338,10 +341,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				CD73322229FCEFDB00899ECC /* LaunchScreen.storyboard in Resources */,
-				CD73321F29FCEFDB00899ECC /* Assets.xcassets in Resources */,
+				CDBFB1932A063C2D00615D3C /* Red.xcassets in Resources */,
 				CDAE866E2A013EF600BCB253 /* ContentView.xib in Resources */,
 				CD45FA0729FF865400457E8F /* ScanViewController.xib in Resources */,
 				CDA53BD42A0233DB00B5DFF8 /* GoogleService-Info.plist in Resources */,
+				CDBFB1952A063C3E00615D3C /* Green.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -458,190 +462,6 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		CD73322429FCEFDB00899ECC /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_TESTABILITY = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
-				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
-				MTL_FAST_MATH = YES;
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = iphoneos;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-			};
-			name = Debug;
-		};
-		CD73322529FCEFDB00899ECC /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				MTL_FAST_MATH = YES;
-				SDKROOT = iphoneos;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		CD73322729FCEFDB00899ECC /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 179D1C8C62680F50E5E76E92 /* Pods-Scan me! calculator.debug.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = T2FQ2ETBMW;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Scan me! calculator/Info.plist";
-				INFOPLIST_KEY_NSCameraUsageDescription = "$(PRODUCT_NAME) needs access to your camera to scan images and recognize text.";
-				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "$(PRODUCT_NAME) needs access to your photo library to scan images and recognize text.";
-				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				OTHER_SWIFT_FLAGS = "-DTHEME_RED -DMEDIA_GALLERY";
-				PRODUCT_BUNDLE_IDENTIFIER = com.gorgom.scanme;
-				PRODUCT_NAME = ScanMe;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
-				SUPPORTS_MACCATALYST = NO;
-				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
-			};
-			name = Debug;
-		};
-		CD73322829FCEFDB00899ECC /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9D19DBBF242AB9868175D248 /* Pods-Scan me! calculator.release.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = T2FQ2ETBMW;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Scan me! calculator/Info.plist";
-				INFOPLIST_KEY_NSCameraUsageDescription = "$(PRODUCT_NAME) needs access to your camera to scan images and recognize text.";
-				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "$(PRODUCT_NAME) needs access to your photo library to scan images and recognize text.";
-				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				OTHER_SWIFT_FLAGS = "-DTHEME_RED -DMEDIA_GALLERY";
-				PRODUCT_BUNDLE_IDENTIFIER = com.gorgom.scanme;
-				PRODUCT_NAME = ScanMe;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
-				SUPPORTS_MACCATALYST = NO;
-				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
-			};
-			name = Release;
-		};
 		CDA53BD62A0294D000B5DFF8 /* Debug-app-green-built-in-camera */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -706,13 +526,14 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 93CCC51659DB07014710FDFA /* Pods-Scan me! calculator.debug-app-green-built-in-camera.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = GreenIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = T2FQ2ETBMW;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Scan me! calculator/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Scan me!";
 				INFOPLIST_KEY_NSCameraUsageDescription = "$(PRODUCT_NAME) needs access to your camera to scan images and recognize text.";
 				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "$(PRODUCT_NAME) needs access to your photo library to scan images and recognize text.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -795,13 +616,14 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = EFD3856E50491173640E43D3 /* Pods-Scan me! calculator.release-app-green-built-in-camera.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = GreenIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = T2FQ2ETBMW;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Scan me! calculator/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Scan me!";
 				INFOPLIST_KEY_NSCameraUsageDescription = "$(PRODUCT_NAME) needs access to your camera to scan images and recognize text.";
 				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "$(PRODUCT_NAME) needs access to your photo library to scan images and recognize text.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -825,25 +647,6 @@
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = "Release-app-green-built-in-camera";
-		};
-		CDA53C042A029D7C00B5DFF8 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = T2FQ2ETBMW;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.gorgom.ScanMeTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ScanMe.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ScanMe";
-			};
-			name = Debug;
 		};
 		CDA53C052A029D7C00B5DFF8 /* Debug-app-red-camera-roll */ = {
 			isa = XCBuildConfiguration;
@@ -920,25 +723,6 @@
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ScanMe.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ScanMe";
 			};
 			name = "Debug-app-green-built-in-camera";
-		};
-		CDA53C092A029D7C00B5DFF8 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = T2FQ2ETBMW;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.gorgom.ScanMeTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ScanMe.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ScanMe";
-			};
-			name = Release;
 		};
 		CDA53C0A2A029D7C00B5DFF8 /* Release-app-red-camera-roll */ = {
 			isa = XCBuildConfiguration;
@@ -1080,13 +864,14 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C8BD427902293C4C6FB0F1BA /* Pods-Scan me! calculator.debug-app-red-camera-roll.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = RedIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = T2FQ2ETBMW;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Scan me! calculator/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Scan me!";
 				INFOPLIST_KEY_NSCameraUsageDescription = "$(PRODUCT_NAME) needs access to your camera to scan images and recognize text.";
 				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "$(PRODUCT_NAME) needs access to your photo library to scan images and recognize text.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -1169,13 +954,14 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 86289EF7DEED3714D917ACE1 /* Pods-Scan me! calculator.release-app-red-camera-roll.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = RedIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = T2FQ2ETBMW;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Scan me! calculator/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Scan me!";
 				INFOPLIST_KEY_NSCameraUsageDescription = "$(PRODUCT_NAME) needs access to your camera to scan images and recognize text.";
 				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "$(PRODUCT_NAME) needs access to your photo library to scan images and recognize text.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -1264,13 +1050,14 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = F4BC2B93B33740A3EC478A12 /* Pods-Scan me! calculator.debug-app-green-camera-roll.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = GreenIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = T2FQ2ETBMW;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Scan me! calculator/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Scan me!";
 				INFOPLIST_KEY_NSCameraUsageDescription = "$(PRODUCT_NAME) needs access to your camera to scan images and recognize text.";
 				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "$(PRODUCT_NAME) needs access to your photo library to scan images and recognize text.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -1353,13 +1140,14 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 243E44AAB7B23A353017DED4 /* Pods-Scan me! calculator.release-app-green-camera-roll.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = GreenIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = T2FQ2ETBMW;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Scan me! calculator/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Scan me!";
 				INFOPLIST_KEY_NSCameraUsageDescription = "$(PRODUCT_NAME) needs access to your camera to scan images and recognize text.";
 				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "$(PRODUCT_NAME) needs access to your photo library to scan images and recognize text.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -1448,13 +1236,14 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 135C2E7662D60DB2780E45A7 /* Pods-Scan me! calculator.debug-app-red-built-in-camera.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = RedIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = T2FQ2ETBMW;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Scan me! calculator/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Scan me!";
 				INFOPLIST_KEY_NSCameraUsageDescription = "$(PRODUCT_NAME) needs access to your camera to scan images and recognize text.";
 				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "$(PRODUCT_NAME) needs access to your photo library to scan images and recognize text.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -1537,13 +1326,14 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A3A437F335B6963DE389B075 /* Pods-Scan me! calculator.release-app-red-built-in-camera.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = RedIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = T2FQ2ETBMW;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Scan me! calculator/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Scan me!";
 				INFOPLIST_KEY_NSCameraUsageDescription = "$(PRODUCT_NAME) needs access to your camera to scan images and recognize text.";
 				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "$(PRODUCT_NAME) needs access to your photo library to scan images and recognize text.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -1574,53 +1364,47 @@
 		CD73320D29FCEFDA00899ECC /* Build configuration list for PBXProject "Scan me! calculator" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				CD73322429FCEFDB00899ECC /* Debug */,
 				CDAE86C42A016D5800BCB253 /* Debug-app-red-camera-roll */,
 				CDE47D442A020AAD00194C9C /* Debug-app-red-built-in-camera */,
 				CDAE86C82A016DC600BCB253 /* Debug-app-green-camera-roll */,
 				CDA53BD62A0294D000B5DFF8 /* Debug-app-green-built-in-camera */,
-				CD73322529FCEFDB00899ECC /* Release */,
 				CDAE86C62A016D7E00BCB253 /* Release-app-red-camera-roll */,
 				CDE47D462A020ACD00194C9C /* Release-app-red-built-in-camera */,
 				CDAE86CA2A016DDD00BCB253 /* Release-app-green-camera-roll */,
 				CDA53BD82A0294FD00B5DFF8 /* Release-app-green-built-in-camera */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = "Debug-app-red-camera-roll";
 		};
 		CD73322629FCEFDB00899ECC /* Build configuration list for PBXNativeTarget "Scan me! calculator" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				CD73322729FCEFDB00899ECC /* Debug */,
 				CDAE86C52A016D5800BCB253 /* Debug-app-red-camera-roll */,
 				CDE47D452A020AAD00194C9C /* Debug-app-red-built-in-camera */,
 				CDAE86C92A016DC600BCB253 /* Debug-app-green-camera-roll */,
 				CDA53BD72A0294D000B5DFF8 /* Debug-app-green-built-in-camera */,
-				CD73322829FCEFDB00899ECC /* Release */,
 				CDAE86C72A016D7E00BCB253 /* Release-app-red-camera-roll */,
 				CDE47D472A020ACD00194C9C /* Release-app-red-built-in-camera */,
 				CDAE86CB2A016DDD00BCB253 /* Release-app-green-camera-roll */,
 				CDA53BD92A0294FD00B5DFF8 /* Release-app-green-built-in-camera */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = "Debug-app-red-camera-roll";
 		};
 		CDA53C032A029D7C00B5DFF8 /* Build configuration list for PBXNativeTarget "ScanMeTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				CDA53C042A029D7C00B5DFF8 /* Debug */,
 				CDA53C052A029D7C00B5DFF8 /* Debug-app-red-camera-roll */,
 				CDA53C062A029D7C00B5DFF8 /* Debug-app-red-built-in-camera */,
 				CDA53C072A029D7C00B5DFF8 /* Debug-app-green-camera-roll */,
 				CDA53C082A029D7C00B5DFF8 /* Debug-app-green-built-in-camera */,
-				CDA53C092A029D7C00B5DFF8 /* Release */,
 				CDA53C0A2A029D7C00B5DFF8 /* Release-app-red-camera-roll */,
 				CDA53C0B2A029D7C00B5DFF8 /* Release-app-red-built-in-camera */,
 				CDA53C0C2A029D7C00B5DFF8 /* Release-app-green-camera-roll */,
 				CDA53C0D2A029D7C00B5DFF8 /* Release-app-green-built-in-camera */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = "Debug-app-red-camera-roll";
 		};
 /* End XCConfigurationList section */
 	};

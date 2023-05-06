@@ -8,8 +8,8 @@
 import UIKit
 
 protocol ScanViewProtocol {
-    func getNewResult(expression: Expression)
-    func reload(expressions: [Expression])
+    func didGetNew(expression: Expression)
+    func didGet(expressions: [Expression])
     func present(_ viewControllerToPresent: UIViewController,
                  animated flag: Bool,
                  completion: (() -> Void)?)
@@ -61,6 +61,7 @@ class ScanViewController: UIViewController {
     }
 }
 
+// MARK: UITableViewDataSource
 extension ScanViewController: UITableViewDataSource {
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -68,7 +69,10 @@ extension ScanViewController: UITableViewDataSource {
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        if let cell = tableView.dequeueReusableCell(withIdentifier: cellID, for: indexPath) as? PaddingTableViewCell, let customView = cell.customView as? ContentView {
+        guard let cell: PaddingTableViewCell =
+                tableView.dequeueReusableCell(withIdentifier: cellID,
+                                              for: indexPath) as? PaddingTableViewCell,
+            let customView: ContentView = cell.customView as? ContentView else { return UITableViewCell() }
 
             let index = expressions.count - indexPath.row - 1
             let data = expressions[index]
@@ -84,19 +88,17 @@ extension ScanViewController: UITableViewDataSource {
             cell.selectionStyle = .none
 
             return cell
-        } else {
-            return UITableViewCell()
-        }
     }
 }
 
+// MARK: ScanViewProtocol
 extension ScanViewController: ScanViewProtocol {
-    func getNewResult(expression: Expression) {
+    func didGetNew(expression: Expression) {
         expressions.append(expression)
         reload()
     }
 
-    func reload(expressions: [Expression]) {
+    func didGet(expressions: [Expression]) {
         self.expressions = expressions
         reload()
     }

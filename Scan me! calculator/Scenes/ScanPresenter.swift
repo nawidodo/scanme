@@ -24,7 +24,7 @@ class ScanPresenter: ScanPresenterProtocol {
     }
 
     func display(expressions: [Expression]) {
-        view?.reload(expressions: expressions.sorted { $0.date < $1.date } )
+        view?.didGet(expressions: expressions.sorted { $0.date < $1.date } )
     }
 
     func display(message: String) {
@@ -32,6 +32,6 @@ class ScanPresenter: ScanPresenterProtocol {
     }
 
     func displayNew(expression: Expression) {
-        view?.getNewResult(expression: expression)
+        view?.didGetNew(expression: expression)
     }
 }
