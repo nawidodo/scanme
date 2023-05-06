@@ -28,6 +28,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
         window?.rootViewController = rootNC
         window?.makeKeyAndVisible()
+        
         guard let frame = window?
             .windowScene?
             .statusBarManager?

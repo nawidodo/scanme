@@ -27,12 +27,14 @@ class OCRService: OCRServiceProtocol {
                 completion(.failure(error))
                 return
             }
+
             // Handle the recognition results
-            // Process the recognized text
             guard let observations: [VNRecognizedTextObservation] = request.results as? [VNRecognizedTextObservation] else {
                 completion(.failure(CustomError.unknown))
                 return
             }
+
+            // Process the recognized text
             let recognizedStrings: [String] = observations.compactMap { observation in
                 observation.topCandidates(1).first?.string
             }
@@ -53,7 +55,6 @@ class OCRService: OCRServiceProtocol {
         do {
             try requestHandler.perform([request])
         } catch (let error){
-            print(error.localizedDescription)
             completion(.failure(error))
         }
     }
